@@ -21,10 +21,12 @@ public class InputFieldSubmit : MonoBehaviour
 
     private void Update()
     {
-        if (inputField.isFocused
-            && !string.IsNullOrEmpty(inputField.text)
-            && Input.GetButtonDown("Submit")){
-            OnSubmit?.Invoke(inputField.text);
+        if (inputField.isFocused && Input.GetButtonDown("Submit"))
+		{
+			if (!string.IsNullOrEmpty(inputField.text))
+			{
+                OnSubmit?.Invoke(inputField.text);
+			}
         }
     }
 
