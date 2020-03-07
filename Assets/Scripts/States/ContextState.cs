@@ -18,9 +18,6 @@ public class ContextState : MonoBehaviour,IState
             case 0:
                 gameObject.AddComponent(typeof(Situation0));
                 break;
-            case 1:
-                gameObject.AddComponent(typeof(Situation1));
-                break;
             default:
                 break;
         }

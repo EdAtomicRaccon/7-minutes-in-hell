@@ -7,7 +7,6 @@ using Stateless;
 public enum Trigger
 {
     PLAYER_ANSWER,
-    TRANSITION_END,
     CONTEXT_SET,
     TIMER_END,
     GAME_START,
@@ -20,8 +19,7 @@ public enum State
     TITLE = 1,
     CONTEXT = 2,
     QUESTION = 3,
-    RESOLUTION = 4,
-    TRANSITION = 5
+    RESOLUTION = 4
 };
 
 interface IState {
@@ -61,12 +59,8 @@ public class GameManager : MonoBehaviour
 
         _machine.Configure(State.QUESTION)
             .OnEntry(t => LoadState<QuestionState>())
-            .Permit(Trigger.TIMER_END, State.TRANSITION)
-            .Permit(Trigger.PLAYER_ANSWER, State.TRANSITION);
-
-        _machine.Configure(State.TRANSITION)
-            .OnEntry(t => LoadState<TranstionState>())
-            .Permit(Trigger.TRANSITION_END,State.CONTEXT)
+            .Permit(Trigger.TIMER_END, State.CONTEXT)
+            .Permit(Trigger.PLAYER_ANSWER, State.CONTEXT)
             .Permit(Trigger.GAME_END, State.RESOLUTION);
 
         _machine.Configure(State.RESOLUTION)

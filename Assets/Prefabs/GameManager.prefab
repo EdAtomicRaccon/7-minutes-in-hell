@@ -64,6 +64,7 @@ MonoBehaviour:
     type: 3}
   computerCanvas: {fileID: 0}
   mailPopup: {fileID: 0}
+  questionList: {fileID: 0}
 --- !u!114 &1670137324318874012
 MonoBehaviour:
   m_ObjectHideFlags: 0

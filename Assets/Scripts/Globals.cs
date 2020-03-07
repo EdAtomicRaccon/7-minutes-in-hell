@@ -21,4 +21,5 @@ public class Globals : Singleton<Globals>
     private void Init() {
         choices = new List<CommunityChoiceData>();
     }
+
 }
