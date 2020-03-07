@@ -16,7 +16,7 @@ public class Situation1 : MonoBehaviour, ISituation
 
     IEnumerator PlaySequence()
     {
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(3f);
         EnviroFunctions.Instance.MailPop();
         yield return null;
         FindObjectOfType<GameManager>()._machine.Fire(Trigger.CONTEXT_SET);

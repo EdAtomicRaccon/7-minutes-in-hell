@@ -101,15 +101,33 @@ public class TwitchGameLogic : Singleton<TwitchGameLogic>
         currentVotesA = 0;
         currentVotesB = 0;
         currentVotesTotal = 0;
-        this.matchStringOptionA = optionA.ToLower();
-        this.matchStringOptionB = optionB.ToLower();
+        this.matchStringOptionA = optionA;
+        this.matchStringOptionB = optionB;
+
+        SendChatMessage($"Voting has started. Send a message beginning with '{optionA}' or '{optionB}' to make your choice.");
+    }
+
+    public void SendTimerMessage(int secondsLeft)
+    {
+        SendMessage($"Voting will end in {secondsLeft} seconds.");
     }
 
     [Button]
     public CommunityChoiceData EndVoting()
     {
         isVoting = false;
+        SendChatMessage($"Voting has ended. '{matchStringOptionA}': {currentVotesA} ({CurrentChoiceA.ToPercentageString()}), '{matchStringOptionB}': {currentVotesB} ({CurrentChoiceB.ToPercentageString()}), total number of votes: {currentVotesTotal}");
         return new CommunityChoiceData(currentVotesA, currentVotesB, messagesOfCurrentRound);
+    }
+
+    #endregion
+
+
+    #region Helper
+
+    void SendChatMessage(string message)
+    {
+        Client.SendMessage(TwitchExtensionGameClient.Instance.channelname, message);
     }
 
     #endregion
@@ -131,14 +149,14 @@ public class TwitchGameLogic : Singleton<TwitchGameLogic>
 
                 string[] messageSplit = message.Split(' ');
 
-                if (string.Compare(matchStringOptionA, messageSplit[0]) == 0)
+                if (string.Compare(matchStringOptionA.ToLower(), messageSplit[0]) == 0)
                 {
                     // voted for A
                     currentVotesA++;
                     currentVotesTotal++;
                     userIdAlreadyVotedList.Add(e.ChatMessage.UserId);
                     OnVoteReceived?.Invoke();
-                } else if (string.Compare(matchStringOptionB, messageSplit[0]) == 0)
+                } else if (string.Compare(matchStringOptionB.ToLower(), messageSplit[0]) == 0)
                 {
                     // voted for B
                     currentVotesB++;

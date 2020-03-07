@@ -1,13 +1,5 @@
 fileFormatVersion: 2
-<<<<<<< HEAD:Assets/RenderTexture.meta
-<<<<<<< HEAD
-guid: 4c1f8ead4172793459edfdd391598e1f
-=======
-guid: 0890314910d814a5f8ce6d60a48c965d
->>>>>>> 0fad7daa31a3e8b9a90db6e35d305d9912bc017b
-=======
 guid: 53099d9c38e1c49b4b1491ed42bd2679
->>>>>>> 25a6db5b54f5d217ea218e36fd084f1d58b5e4bd:Assets/Sprites.meta
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}

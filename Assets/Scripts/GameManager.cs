@@ -7,12 +7,12 @@ using Stateless;
 public enum Trigger
 {
     PLAYER_ANSWER,
-    TRANSITION_END,
     CONTEXT_SET,
     TIMER_END,
     GAME_START,
     GAME_END,
-    AUTHENTICATED
+    AUTHENTICATED,
+    TRANSITION_END
 };
 public enum State
 {
@@ -37,6 +37,7 @@ public class GameManager : MonoBehaviour
     public int step = 0;
 
     void Awake() {
+        Debug.Log("Heho");
         InitStateMachine();
     }
 
@@ -65,7 +66,7 @@ public class GameManager : MonoBehaviour
             .Permit(Trigger.PLAYER_ANSWER, State.TRANSITION);
 
         _machine.Configure(State.TRANSITION)
-            .OnEntry(t => LoadState<TranstionState>())
+            .OnEntry(t=> LoadState<TransitionState>())
             .Permit(Trigger.TRANSITION_END,State.CONTEXT)
             .Permit(Trigger.GAME_END, State.RESOLUTION);
 
