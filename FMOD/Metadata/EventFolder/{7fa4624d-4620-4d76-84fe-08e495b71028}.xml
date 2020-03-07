@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="MasterEventFolder" id="{7fa4624d-4620-4d76-84fe-08e495b71028}">
+		<property name="name">
+			<value>Master</value>
+		</property>
+	</object>
+</objects>
