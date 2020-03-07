@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 7500785859349030228}
   - component: {fileID: 7500785859349030229}
   - component: {fileID: 2114169994292076169}
+  - component: {fileID: 1670137324318874012}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -61,3 +62,17 @@ MonoBehaviour:
   canMove: 0
   titleCanvas: {fileID: 1369903541795308464, guid: 3507044f690d29c4f80e17786013c9cf,
     type: 3}
+  computerCanvas: {fileID: 0}
+  mailPopup: {fileID: 0}
+--- !u!114 &1670137324318874012
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7500785859349030230}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45f444cdabdb7f2439fc2a3dc4fc74a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
