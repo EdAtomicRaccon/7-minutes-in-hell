@@ -1,5 +1,1087 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8773297953918170703
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Kicking the chick/PlayerDistance
+  m_EditorClassIdentifier: 
+  Name: PlayerDistance
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
+--- !u!114 &-8724700034558012559
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Locomotion_Player/Ladder
+  m_EditorClassIdentifier: 
+  Path: event:/Locomotion_Player/Ladder
+  guid: 2a1be4604ad0ab4880d5d2c32a591fa9
+  Banks:
+  - {fileID: -5986300015589498550}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 500
+--- !u!114 &-8432100550246618432
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Locomotion_Player/Edge Landing Elbows
+  m_EditorClassIdentifier: 
+  Path: event:/Locomotion_Player/Edge Landing Elbows
+  guid: 81a8918bb9ec554dafd19d8dda6009a0
+  Banks:
+  - {fileID: -5986300015589498550}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 774
+--- !u!114 &-8389189413925207449
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/06_ChickSelection.bank
+  m_EditorClassIdentifier: 
+  Path: ../shadow-of-steam-2018/FMOD/Build/Desktop/06_ChickSelection.bank
+  SubDir: 
+  lastModified: 637169537406025433
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
+--- !u!114 &-8271135726278757363
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Ambience Loop/CageProximity
+  m_EditorClassIdentifier: 
+  Name: CageProximity
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
+--- !u!114 &-7891611462766454239
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Landing/VerticalSpeedStored
+  m_EditorClassIdentifier: 
+  Name: VerticalSpeedStored
+  Min: -10
+  Max: 10
+  Default: 0
+  Exists: 1
+--- !u!114 &-7687078105368007417
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: FallHeight
+  m_EditorClassIdentifier: 
+  Name: FallHeight
+  Min: 0
+  Max: 8
+  Default: 0
+  Exists: 1
+--- !u!114 &-7240591905220844168
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Interactable_Objects/Metal Hit
+  m_EditorClassIdentifier: 
+  Path: event:/Interactable_Objects/Metal Hit
+  guid: 6a954b0c05e0394eaae90e75add5624e
+  Banks:
+  - {fileID: 5263575620584861997}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 5
+  MaxDistance: 35
+  Length: 3457
+--- !u!114 &-7073029609929869005
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Scene_Ambience_ChickensField/TinTown
+  m_EditorClassIdentifier: 
+  Name: TinTown
+  Min: 0
+  Max: 3
+  Default: 0
+  Exists: 1
+--- !u!114 &-7072018425963781916
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Interactable_Objects/Scene_Levers-Collection 2
+  m_EditorClassIdentifier: 
+  Path: event:/Interactable_Objects/Scene_Levers-Collection 2
+  guid: 64a73a3dac54dd4eb3ff067c7b1ae519
+  Banks:
+  - {fileID: 5263575620584861997}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 0
+  Parameters:
+  - {fileID: -1737769687928804701}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2201
+--- !u!114 &-6990755923788686348
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/_Tests/DebugBeep
+  m_EditorClassIdentifier: 
+  Path: event:/_Tests/DebugBeep
+  guid: cbdc7bab2584c5438e45e29a7248c6b0
+  Banks:
+  - {fileID: -1810108799101360921}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 370
+--- !u!114 &-6899298315829761848
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/05_EnterTheMachine.bank
+  m_EditorClassIdentifier: 
+  Path: ../shadow-of-steam-2018/FMOD/Build/Desktop/05_EnterTheMachine.bank
+  SubDir: 
+  lastModified: 637169537406015566
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
+--- !u!114 &-6772684670745194736
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Locomotion_Player/Footsteps
+  m_EditorClassIdentifier: 
+  Path: event:/Locomotion_Player/Footsteps
+  guid: 9f44dcab32293a48b5a4087bd84738d1
+  Banks:
+  - {fileID: -5986300015589498550}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters:
+  - {fileID: -3976005061136954043}
+  - {fileID: 3902932665779214241}
+  - {fileID: -4764239527733840410}
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 800
+--- !u!114 &-6614125599879468711
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: snapshot:/InsideTunnel
+  m_EditorClassIdentifier: 
+  Path: snapshot:/InsideTunnel
+  guid: d16f87326433044f9c91e2932ee68855
+  Banks:
+  - {fileID: -1810108799101360921}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
+--- !u!114 &-6277455362589441014
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Game_Scenes/03_LearnPushing-Cages/ChicksInCages
+  m_EditorClassIdentifier: 
+  Path: event:/Game_Scenes/03_LearnPushing-Cages/ChicksInCages
+  guid: fe6f1e5499e15847a7ddd63b968e5406
+  Banks:
+  - {fileID: -5257932301370087433}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 10
+  MaxDistance: 30
+  Length: 19443
+--- !u!114 &-6200996840728171024
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Game_Scenes/03_LearnPushing-Cages/LaddercomingDown
+  m_EditorClassIdentifier: 
+  Path: event:/Game_Scenes/03_LearnPushing-Cages/LaddercomingDown
+  guid: 8dd0ba845690fd45b37a618f0384fd94
+  Banks:
+  - {fileID: -5257932301370087433}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 10
+  MaxDistance: 30
+  Length: 3620
+--- !u!114 &-5986300015589498550
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Player.bank
+  m_EditorClassIdentifier: 
+  Path: ../shadow-of-steam-2018/FMOD/Build/Desktop/Player.bank
+  SubDir: 
+  lastModified: 637169537406703035
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
+--- !u!114 &-5953640534094567117
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Locomotion_Player/Try_to_reach
+  m_EditorClassIdentifier: 
+  Path: event:/Locomotion_Player/Try_to_reach
+  guid: 86bd1cd51fdbc54da6206010a591d5b4
+  Banks:
+  - {fileID: -5986300015589498550}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters:
+  - {fileID: -2866609215990923432}
+  - {fileID: -3188269232401640731}
+  - {fileID: 739693351814404322}
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 800
+--- !u!114 &-5780402325416629540
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Ambience.bank
+  m_EditorClassIdentifier: 
+  Path: ../shadow-of-steam-2018/FMOD/Build/Desktop/Ambience.bank
+  SubDir: 
+  lastModified: 637169537406603123
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
+--- !u!114 &-5688472577777672493
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Locomotion_Player/Push&Pull
+  m_EditorClassIdentifier: 
+  Path: event:/Locomotion_Player/Push&Pull
+  guid: 5ee18cc8fecc5c45a59ac14f722f9889
+  Banks:
+  - {fileID: -5986300015589498550}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 4158
+--- !u!114 &-5603498735041776377
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Game_Scenes/01_GameStart/RavenGirlLanding
+  m_EditorClassIdentifier: 
+  Path: event:/Game_Scenes/01_GameStart/RavenGirlLanding
+  guid: 09395608b42d194ca9e5e92950d57c29
+  Banks:
+  - {fileID: 5023647098381224350}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 15
+  MaxDistance: 50
+  Length: 802
+--- !u!114 &-5257932301370087433
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/03_LearnPushing-cages.bank
+  m_EditorClassIdentifier: 
+  Path: ../shadow-of-steam-2018/FMOD/Build/Desktop/03_LearnPushing-cages.bank
+  SubDir: 
+  lastModified: 637169537405605852
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
+--- !u!114 &-5152669793316377801
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Interactable_Objects/Tiny-Chickens
+  m_EditorClassIdentifier: 
+  Path: event:/Interactable_Objects/Tiny-Chickens
+  guid: 93d42566ce9f4146b7ca6a129c7d68c2
+  Banks:
+  - {fileID: 5263575620584861997}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 15
+  MaxDistance: 35
+  Length: 1850
+--- !u!114 &-5138456885025088922
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Game_Scenes/05_EnterTheMachine/Ambienceloop2
+  m_EditorClassIdentifier: 
+  Path: event:/Game_Scenes/05_EnterTheMachine/Ambienceloop2
+  guid: ab20a24a3ec5ed42bbedb9552ddd6842
+  Banks:
+  - {fileID: -6899298315829761848}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 62503
+--- !u!114 &-5109913387159436409
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/_Tests/Stomper
+  m_EditorClassIdentifier: 
+  Path: event:/_Tests/Stomper
+  guid: 071a93e72f9b8449b92bf3ea48ca6980
+  Banks:
+  - {fileID: 5263575620584861997}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 20
+  MaxDistance: 40
+  Length: 333
+--- !u!114 &-4943741716622537281
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Game_Scenes/05_BirdsLyingEggs/Chickens
+  m_EditorClassIdentifier: 
+  Path: event:/Game_Scenes/05_BirdsLyingEggs/Chickens
+  guid: 4ce65db2944b0f49bfdeaf6aecd7468e
+  Banks:
+  - {fileID: 528337217268213624}
+  - {fileID: -5780402325416629540}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 6765
+--- !u!114 &-4764239527733840410
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Footsteps/Metal
+  m_EditorClassIdentifier: 
+  Name: Metal
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
+--- !u!114 &-4649438148622854257
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Interactable_Objects/Shredding
+  m_EditorClassIdentifier: 
+  Path: event:/Interactable_Objects/Shredding
+  guid: d3e99e263b9d894898854fa20b3828b8
+  Banks:
+  - {fileID: 5263575620584861997}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 846
+--- !u!114 &-4648018585843831078
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Game_Scenes/03_LearnPushing-Cages/Kicking the chick
+  m_EditorClassIdentifier: 
+  Path: event:/Game_Scenes/03_LearnPushing-Cages/Kicking the chick
+  guid: 42b799ddc5e87e459f0283470880fd98
+  Banks:
+  - {fileID: -5257932301370087433}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 0
+  Parameters:
+  - {fileID: -8773297953918170703}
+  MinDistance: 10
+  MaxDistance: 90
+  Length: 5175
+--- !u!114 &-4432180464492082179
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Locomotion_Player/Death_by_falling_into_the_void
+  m_EditorClassIdentifier: 
+  Path: event:/Locomotion_Player/Death_by_falling_into_the_void
+  guid: c73481f4602a2a4e80c56524f08a835c
+  Banks:
+  - {fileID: -5986300015589498550}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 1875
+--- !u!114 &-4182072195376347622
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Ambiences/Scene_01_Game-Start
+  m_EditorClassIdentifier: 
+  Path: event:/Ambiences/Scene_01_Game-Start
+  guid: 45935572e697ec4eb7186f86ebdfa786
+  Banks:
+  - {fileID: -5780402325416629540}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 5134100752500573494}
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 124928
+--- !u!114 &-4179261714894486558
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Game_Scenes/01_GameStart/GirlLanding
+  m_EditorClassIdentifier: 
+  Path: event:/Game_Scenes/01_GameStart/GirlLanding
+  guid: 49c243d174e962458ef0c33f2335a377
+  Banks:
+  - {fileID: 5023647098381224350}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 15
+  MaxDistance: 50
+  Length: 444
+--- !u!114 &-3998182214397722334
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Game_Scenes/05_EnterTheMachine/Sting
+  m_EditorClassIdentifier: 
+  Path: event:/Game_Scenes/05_EnterTheMachine/Sting
+  guid: 67a2c5b7f1170c49adde8460baf0ffa4
+  Banks:
+  - {fileID: -6899298315829761848}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 8900
+--- !u!114 &-3976005061136954043
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Footsteps/Gravel
+  m_EditorClassIdentifier: 
+  Name: Gravel
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
+--- !u!114 &-3188269232401640731
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Try_to_reach/Stone
+  m_EditorClassIdentifier: 
+  Name: Stone
+  Min: 0
+  Max: 1
+  Default: 1
+  Exists: 1
+--- !u!114 &-2866609215990923432
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Try_to_reach/Gravel
+  m_EditorClassIdentifier: 
+  Name: Gravel
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
+--- !u!114 &-2391329094165063480
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Game_Scenes/01_GameStart/ChapterCard
+  m_EditorClassIdentifier: 
+  Path: event:/Game_Scenes/01_GameStart/ChapterCard
+  guid: 9847506284ab564292f46aebcc9fd75d
+  Banks:
+  - {fileID: 5023647098381224350}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 10866
+--- !u!114 &-2384150423395292625
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Locomotion_Player/Jump
+  m_EditorClassIdentifier: 
+  Path: event:/Locomotion_Player/Jump
+  guid: a23d6cc2652eb14e84522843ab559f64
+  Banks:
+  - {fileID: -5986300015589498550}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 191
+--- !u!114 &-1810108799101360921
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: ../shadow-of-steam-2018/FMOD/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637169537406633100
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
+--- !u!114 &-1792083340681150499
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: snapshot:/LocomotionInTunnel
+  m_EditorClassIdentifier: 
+  Path: snapshot:/LocomotionInTunnel
+  guid: bc5f7c82776319468089cf9f5b73faeb
+  Banks:
+  - {fileID: -1810108799101360921}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
+--- !u!114 &-1737769687928804701
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Scene_Levers-Collection 2/interactionLeverStopped
+  m_EditorClassIdentifier: 
+  Name: interactionLeverStopped
+  Min: 0
+  Max: 2
+  Default: 0
+  Exists: 1
+--- !u!114 &-1656991941813514664
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Locomotion_Player/Try_to_reach-hand-slide-only
+  m_EditorClassIdentifier: 
+  Path: event:/Locomotion_Player/Try_to_reach-hand-slide-only
+  guid: af4120ac6c36e24ca3ebd5a7cae3ff5f
+  Banks:
+  - {fileID: -5986300015589498550}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 600
+--- !u!114 &-1139163435685471688
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Interactable_Objects/CircularSaw
+  m_EditorClassIdentifier: 
+  Path: event:/Interactable_Objects/CircularSaw
+  guid: 2f84fcbfb6abb041b594fc89a4bd6ad4
+  Banks:
+  - {fileID: 489806808887546988}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 5
+  MaxDistance: 35
+  Length: 3683
+--- !u!114 &-1042328014246900530
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Game_Scenes/01_GameStart/SawCut
+  m_EditorClassIdentifier: 
+  Path: event:/Game_Scenes/01_GameStart/SawCut
+  guid: 65ef60ab7f62e844a43201424af26c2c
+  Banks:
+  - {fileID: 5023647098381224350}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 15
+  MaxDistance: 50
+  Length: 470
+--- !u!114 &-888760069567756440
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/TrainWarning/isOnTunnel
+  m_EditorClassIdentifier: 
+  Name: isOnTunnel
+  Min: 0
+  Max: 2
+  Default: 1
+  Exists: 1
+--- !u!114 &-714228511594767881
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Interactable_Objects/Lever Sap
+  m_EditorClassIdentifier: 
+  Path: event:/Interactable_Objects/Lever Sap
+  guid: 4d591ef4236ef54189d7fee8d2c79ed3
+  Banks:
+  - {fileID: 5263575620584861997}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 5
+  MaxDistance: 30
+  Length: 401
+--- !u!114 &-618498004019345768
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: ../shadow-of-steam-2018/FMOD/Build/Desktop/Master.strings.bank
+  SubDir: 
+  lastModified: 637169537406633100
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 5446
+  Exists: 1
+--- !u!114 &-381573863688855216
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Test_Ambience/dangerArea
+  m_EditorClassIdentifier: 
+  Name: dangerArea
+  Min: 0
+  Max: 2
+  Default: 1
+  Exists: 1
+--- !u!114 &-338957971987881345
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Game_Scenes/01_GameStart/TrainWarningNoHorn
+  m_EditorClassIdentifier: 
+  Path: event:/Game_Scenes/01_GameStart/TrainWarningNoHorn
+  guid: 7ad04806a7fe1e4e856533eff830741e
+  Banks:
+  - {fileID: 5023647098381224350}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 1819841951669324290}
+  - {fileID: 8213350739663052265}
+  MinDistance: 15
+  MaxDistance: 62
+  Length: 35171
+--- !u!114 &-115302783412083227
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Game_Scenes/05_EnterTheMachine/Ambience Loop
+  m_EditorClassIdentifier: 
+  Path: event:/Game_Scenes/05_EnterTheMachine/Ambience Loop
+  guid: f8e044860dc97743ab7816806b766b22
+  Banks:
+  - {fileID: -5780402325416629540}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: -8271135726278757363}
+  - {fileID: 5116747681269836859}
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 75000
+--- !u!114 &-14765399988560733
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Interactable_Objects/Scene_Lever_Push&Pull_Short
+  m_EditorClassIdentifier: 
+  Path: event:/Interactable_Objects/Scene_Lever_Push&Pull_Short
+  guid: dec8ebdb638fc24b84798ef05982a833
+  Banks:
+  - {fileID: 5263575620584861997}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 858
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12,10 +1094,1017 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d32cf7c32a3ed8347bac48ef5ed56d82, type: 3}
   m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
-  EditorBanks: []
-  EditorEvents: []
-  EditorParameters: []
-  MasterBanks: []
-  StringsBanks: []
-  stringsBankWriteTime: 0
+  EditorBanks:
+  - {fileID: -618498004019345768}
+  - {fileID: 5023647098381224350}
+  - {fileID: -5257932301370087433}
+  - {fileID: 1096094806631653996}
+  - {fileID: 528337217268213624}
+  - {fileID: -6899298315829761848}
+  - {fileID: -8389189413925207449}
+  - {fileID: -5780402325416629540}
+  - {fileID: 489806808887546988}
+  - {fileID: -1810108799101360921}
+  - {fileID: 5263575620584861997}
+  - {fileID: -5986300015589498550}
+  - {fileID: 3606381374794582129}
+  EditorEvents:
+  - {fileID: -5603498735041776377}
+  - {fileID: 1166670377937905958}
+  - {fileID: 7394729909117608}
+  - {fileID: -4179261714894486558}
+  - {fileID: -1042328014246900530}
+  - {fileID: -338957971987881345}
+  - {fileID: 5007415067133892817}
+  - {fileID: -2391329094165063480}
+  - {fileID: 5347777953147429908}
+  - {fileID: 3806888026944042020}
+  - {fileID: 7173014869078495173}
+  - {fileID: -4648018585843831078}
+  - {fileID: 1280835721258015397}
+  - {fileID: -6200996840728171024}
+  - {fileID: -6277455362589441014}
+  - {fileID: 2146171986206998490}
+  - {fileID: 8107577389274851776}
+  - {fileID: 8445761285179784687}
+  - {fileID: 6477451039874775717}
+  - {fileID: 87566850172870655}
+  - {fileID: -4943741716622537281}
+  - {fileID: -3998182214397722334}
+  - {fileID: 764261913253199674}
+  - {fileID: -5138456885025088922}
+  - {fileID: 5422195456191203971}
+  - {fileID: 4985830265178599208}
+  - {fileID: -4182072195376347622}
+  - {fileID: 9134893305246129358}
+  - {fileID: 885530949032383651}
+  - {fileID: -115302783412083227}
+  - {fileID: 6144708231516572294}
+  - {fileID: -1139163435685471688}
+  - {fileID: -1792083340681150499}
+  - {fileID: -6990755923788686348}
+  - {fileID: -6614125599879468711}
+  - {fileID: -5109913387159436409}
+  - {fileID: 4439400122817102724}
+  - {fileID: 473538543881524000}
+  - {fileID: 8955688005025360585}
+  - {fileID: -714228511594767881}
+  - {fileID: -7072018425963781916}
+  - {fileID: -7240591905220844168}
+  - {fileID: -5152669793316377801}
+  - {fileID: -4649438148622854257}
+  - {fileID: -14765399988560733}
+  - {fileID: 8425211759831812425}
+  - {fileID: 352317731001602960}
+  - {fileID: -8724700034558012559}
+  - {fileID: 890070475948407147}
+  - {fileID: -5688472577777672493}
+  - {fileID: -8432100550246618432}
+  - {fileID: -5953640534094567117}
+  - {fileID: -6772684670745194736}
+  - {fileID: -2384150423395292625}
+  - {fileID: -1656991941813514664}
+  - {fileID: -4432180464492082179}
+  - {fileID: 9169220377628843789}
+  - {fileID: 1422764276352522795}
+  - {fileID: 2661117559265341143}
+  - {fileID: 3440309578231556061}
+  EditorParameters:
+  - {fileID: 2102082637999902650}
+  - {fileID: -7687078105368007417}
+  MasterBanks:
+  - {fileID: -1810108799101360921}
+  StringsBanks:
+  - {fileID: -618498004019345768}
+  stringsBankWriteTime: 637169537406633100
   cacheVersion: 3
+--- !u!114 &7394729909117608
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Game_Scenes/01_GameStart/ClockTicking
+  m_EditorClassIdentifier: 
+  Path: event:/Game_Scenes/01_GameStart/ClockTicking
+  guid: 41e55be1e6e1f042ae956a7902e1945a
+  Banks:
+  - {fileID: 5023647098381224350}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 15
+  MaxDistance: 40
+  Length: 285
+--- !u!114 &87566850172870655
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Game_Scenes/05_BirdsLyingEggs/CagesMoving
+  m_EditorClassIdentifier: 
+  Path: event:/Game_Scenes/05_BirdsLyingEggs/CagesMoving
+  guid: 46511c614ed0b64cba618e737aeb6aea
+  Banks:
+  - {fileID: 528337217268213624}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 2363356400017358255}
+  MinDistance: 15
+  MaxDistance: 800
+  Length: 18658
+--- !u!114 &352317731001602960
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Locomotion_Player/Sliding
+  m_EditorClassIdentifier: 
+  Path: event:/Locomotion_Player/Sliding
+  guid: 15fe118459904244ace36772b3d7e959
+  Banks:
+  - {fileID: -5986300015589498550}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 2063
+--- !u!114 &473538543881524000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Interactable_Objects/Scene_HeavyLeverOncePulling
+  m_EditorClassIdentifier: 
+  Path: event:/Interactable_Objects/Scene_HeavyLeverOncePulling
+  guid: 206bab38a8713a408b986d106f11d46b
+  Banks:
+  - {fileID: 5263575620584861997}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 3801
+--- !u!114 &489806808887546988
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Enemies.bank
+  m_EditorClassIdentifier: 
+  Path: ../shadow-of-steam-2018/FMOD/Build/Desktop/Enemies.bank
+  SubDir: 
+  lastModified: 637169537406623109
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
+--- !u!114 &528337217268213624
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/05_BirdsLayingEggs.bank
+  m_EditorClassIdentifier: 
+  Path: ../shadow-of-steam-2018/FMOD/Build/Desktop/05_BirdsLayingEggs.bank
+  SubDir: 
+  lastModified: 637169537405935612
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
+--- !u!114 &739693351814404322
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Try_to_reach/Metal
+  m_EditorClassIdentifier: 
+  Name: Metal
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
+--- !u!114 &764261913253199674
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Game_Scenes/05_EnterTheMachine/OpenGitter
+  m_EditorClassIdentifier: 
+  Path: event:/Game_Scenes/05_EnterTheMachine/OpenGitter
+  guid: aa327f0875077941bac06cf166e85620
+  Banks:
+  - {fileID: -6899298315829761848}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 15
+  MaxDistance: 35
+  Length: 5524
+--- !u!114 &885530949032383651
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Ambiences/Scene_Ambience_ChickensField
+  m_EditorClassIdentifier: 
+  Path: event:/Ambiences/Scene_Ambience_ChickensField
+  guid: e34538c775abca4ebe5c8877adc1fdc5
+  Banks:
+  - {fileID: -5780402325416629540}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: -7073029609929869005}
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 21413
+--- !u!114 &890070475948407147
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Locomotion_Player/Landing
+  m_EditorClassIdentifier: 
+  Path: event:/Locomotion_Player/Landing
+  guid: 3ccdfdb7fb005c4885e4104045a995b0
+  Banks:
+  - {fileID: -5986300015589498550}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters:
+  - {fileID: 8205824577352427796}
+  - {fileID: -7891611462766454239}
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 392
+--- !u!114 &1096094806631653996
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/04_SoundTrain.bank
+  m_EditorClassIdentifier: 
+  Path: ../shadow-of-steam-2018/FMOD/Build/Desktop/04_SoundTrain.bank
+  SubDir: 
+  lastModified: 637169537405845526
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
+--- !u!114 &1166670377937905958
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Game_Scenes/01_GameStart/ClockWarning
+  m_EditorClassIdentifier: 
+  Path: event:/Game_Scenes/01_GameStart/ClockWarning
+  guid: 26f45ab74da4d041a6649737ead1f01a
+  Banks:
+  - {fileID: 5023647098381224350}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 15
+  MaxDistance: 50
+  Length: 285
+--- !u!114 &1280835721258015397
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Game_Scenes/03_LearnPushing-Cages/GateOpening
+  m_EditorClassIdentifier: 
+  Path: event:/Game_Scenes/03_LearnPushing-Cages/GateOpening
+  guid: 6d5275eb8a69f7428d6795db60032b89
+  Banks:
+  - {fileID: -5257932301370087433}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 15
+  MaxDistance: 35
+  Length: 4600
+--- !u!114 &1305784673997883395
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/MachinesBackground/BGEffects
+  m_EditorClassIdentifier: 
+  Name: BGEffects
+  Min: 0
+  Max: 3
+  Default: 0
+  Exists: 1
+--- !u!114 &1422764276352522795
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Game_Scenes/XX_ShippingFacility/Chunk -- Shipping facility Enemies/Propaganda
+  m_EditorClassIdentifier: 
+  Path: event:/Game_Scenes/XX_ShippingFacility/Chunk -- Shipping facility Enemies/Propaganda
+  guid: 0b5182f10fbc024ebb1be5b04160f4e9
+  Banks:
+  - {fileID: 3606381374794582129}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 38
+  Length: 578873
+--- !u!114 &1819841951669324290
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/TrainWarningNoHorn/isOnTunnel
+  m_EditorClassIdentifier: 
+  Name: isOnTunnel
+  Min: 0
+  Max: 2
+  Default: 1
+  Exists: 1
+--- !u!114 &2102082637999902650
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: CharacterSpeed
+  m_EditorClassIdentifier: 
+  Name: CharacterSpeed
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
+--- !u!114 &2146171986206998490
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Game_Scenes/04_SoundTrain/MovingBugs
+  m_EditorClassIdentifier: 
+  Path: event:/Game_Scenes/04_SoundTrain/MovingBugs
+  guid: 731da86468141d4ebc39c7627f1692cc
+  Banks:
+  - {fileID: 1096094806631653996}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 15
+  MaxDistance: 35
+  Length: 29074
+--- !u!114 &2363356400017358255
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/CagesMoving/cageIsMoving
+  m_EditorClassIdentifier: 
+  Name: cageIsMoving
+  Min: 0
+  Max: 2
+  Default: 0
+  Exists: 1
+--- !u!114 &2661117559265341143
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Game_Scenes/XX_ShippingFacility/Chunk -- Shipping facility Enemies/tubesWater
+  m_EditorClassIdentifier: 
+  Path: event:/Game_Scenes/XX_ShippingFacility/Chunk -- Shipping facility Enemies/tubesWater
+  guid: 48df46282061344db624171ecdb8f61b
+  Banks:
+  - {fileID: 3606381374794582129}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 10
+  MaxDistance: 40
+  Length: 7366
+--- !u!114 &3440309578231556061
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Game_Scenes/XX_ShippingFacility/Chunk -- Shipping facility Enemies/DoorOpening
+  m_EditorClassIdentifier: 
+  Path: event:/Game_Scenes/XX_ShippingFacility/Chunk -- Shipping facility Enemies/DoorOpening
+  guid: 584e4837d9c0734688194c4b319f0b59
+  Banks:
+  - {fileID: 3606381374794582129}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 10
+  MaxDistance: 50
+  Length: 1854
+--- !u!114 &3606381374794582129
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/XX_ShippingFacility.bank
+  m_EditorClassIdentifier: 
+  Path: ../shadow-of-steam-2018/FMOD/Build/Desktop/XX_ShippingFacility.bank
+  SubDir: 
+  lastModified: 637169537407182716
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
+--- !u!114 &3806888026944042020
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Game_Scenes/01_GameStart/TrainWarning
+  m_EditorClassIdentifier: 
+  Path: event:/Game_Scenes/01_GameStart/TrainWarning
+  guid: b7815d9d142c7742bc317b9a5cecdffc
+  Banks:
+  - {fileID: 5023647098381224350}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 0
+  Parameters:
+  - {fileID: -888760069567756440}
+  MinDistance: 10
+  MaxDistance: 80
+  Length: 19668
+--- !u!114 &3902932665779214241
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Footsteps/Stone
+  m_EditorClassIdentifier: 
+  Name: Stone
+  Min: 0
+  Max: 1
+  Default: 1
+  Exists: 1
+--- !u!114 &4439400122817102724
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Game_Scenes/XX_ShippingFacility/Chunk -- Shipping facility Enemies/Bridge
+  m_EditorClassIdentifier: 
+  Path: event:/Game_Scenes/XX_ShippingFacility/Chunk -- Shipping facility Enemies/Bridge
+  guid: 0aeac69c0141784b936bf42145621ff0
+  Banks:
+  - {fileID: 5263575620584861997}
+  - {fileID: 3606381374794582129}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 10
+  MaxDistance: 35
+  Length: 22000
+--- !u!114 &4985830265178599208
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Ambiences/Scene_Start_Ambience_1
+  m_EditorClassIdentifier: 
+  Path: event:/Ambiences/Scene_Start_Ambience_1
+  guid: 2b8d9153ce7b484280cd203a7a4b6403
+  Banks:
+  - {fileID: -5780402325416629540}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 21413
+--- !u!114 &5007415067133892817
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Game_Scenes/01_GameStart/MachinesBackground
+  m_EditorClassIdentifier: 
+  Path: event:/Game_Scenes/01_GameStart/MachinesBackground
+  guid: 89a4fbbc07fa454780d68e68d3f069d7
+  Banks:
+  - {fileID: 5023647098381224350}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 1305784673997883395}
+  MinDistance: 15
+  MaxDistance: 35
+  Length: 73561
+--- !u!114 &5023647098381224350
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/01_GameStart.bank
+  m_EditorClassIdentifier: 
+  Path: ../shadow-of-steam-2018/FMOD/Build/Desktop/01_GameStart.bank
+  SubDir: 
+  lastModified: 637169537405555702
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
+--- !u!114 &5116747681269836859
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Ambience Loop/CameraChange
+  m_EditorClassIdentifier: 
+  Name: CameraChange
+  Min: 0
+  Max: 2
+  Default: 0
+  Exists: 1
+--- !u!114 &5134100752500573494
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Scene_01_Game-Start/Intensity
+  m_EditorClassIdentifier: 
+  Name: Intensity
+  Min: 0
+  Max: 100
+  Default: 0
+  Exists: 1
+--- !u!114 &5263575620584861997
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Objects_Interactive.bank
+  m_EditorClassIdentifier: 
+  Path: ../shadow-of-steam-2018/FMOD/Build/Desktop/Objects_Interactive.bank
+  SubDir: 
+  lastModified: 637169537406673003
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
+--- !u!114 &5347777953147429908
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Game_Scenes/01_GameStart/LedgeBreaking
+  m_EditorClassIdentifier: 
+  Path: event:/Game_Scenes/01_GameStart/LedgeBreaking
+  guid: b5b05ed5158b894ab8c79bddee15456b
+  Banks:
+  - {fileID: 5023647098381224350}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 15
+  MaxDistance: 35
+  Length: 584
+--- !u!114 &5422195456191203971
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Game_Scenes/06_ChickSelection/Platform Raising
+  m_EditorClassIdentifier: 
+  Path: event:/Game_Scenes/06_ChickSelection/Platform Raising
+  guid: e24f26cb735c8f488ad179079ca69010
+  Banks:
+  - {fileID: -8389189413925207449}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 30
+  MaxDistance: 40
+  Length: 2635
+--- !u!114 &6144708231516572294
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Enemies/SearchLights
+  m_EditorClassIdentifier: 
+  Path: event:/Enemies/SearchLights
+  guid: 16a1ebe6c569ef41bd3942e96dd4e9cf
+  Banks:
+  - {fileID: 489806808887546988}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 15
+  MaxDistance: 50
+  Length: 5971
+--- !u!114 &6477451039874775717
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Game_Scenes/05_BirdsLyingEggs/ChickensVariant
+  m_EditorClassIdentifier: 
+  Path: event:/Game_Scenes/05_BirdsLyingEggs/ChickensVariant
+  guid: 3b0a3c541c7ce042a25091e5a3c32419
+  Banks:
+  - {fileID: 528337217268213624}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 5
+  MaxDistance: 35
+  Length: 7644
+--- !u!114 &7173014869078495173
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Game_Scenes/03_LearnPushing-Cages/3DTypo
+  m_EditorClassIdentifier: 
+  Path: event:/Game_Scenes/03_LearnPushing-Cages/3DTypo
+  guid: 354825fce2301c47bbff46f63ccf9173
+  Banks:
+  - {fileID: -5257932301370087433}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 10
+  MaxDistance: 30
+  Length: 8375
+--- !u!114 &8107577389274851776
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Game_Scenes/04_SoundTrain/AmbienceSound
+  m_EditorClassIdentifier: 
+  Path: event:/Game_Scenes/04_SoundTrain/AmbienceSound
+  guid: 7c769e81648199448d98028b10910384
+  Banks:
+  - {fileID: 1096094806631653996}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 60503
+--- !u!114 &8205824577352427796
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Landing/VerticalSpeed
+  m_EditorClassIdentifier: 
+  Name: VerticalSpeed
+  Min: -10
+  Max: 10
+  Default: 0
+  Exists: 1
+--- !u!114 &8213350739663052265
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/TrainWarningNoHorn/isKillingGirl
+  m_EditorClassIdentifier: 
+  Name: isKillingGirl
+  Min: 0
+  Max: 2
+  Default: 1
+  Exists: 1
+--- !u!114 &8425211759831812425
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Locomotion_Player/Edge Climbing
+  m_EditorClassIdentifier: 
+  Path: event:/Locomotion_Player/Edge Climbing
+  guid: 0644c1b8dd5c8047aecfbcd53ae42d98
+  Banks:
+  - {fileID: -5986300015589498550}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 700
+--- !u!114 &8445761285179784687
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Game_Scenes/05_BirdsLyingEggs/ChickenGroup
+  m_EditorClassIdentifier: 
+  Path: event:/Game_Scenes/05_BirdsLyingEggs/ChickenGroup
+  guid: 29dc4e92b46a4440a5c4d39480554dc7
+  Banks:
+  - {fileID: 528337217268213624}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 10
+  MaxDistance: 35
+  Length: 6765
+--- !u!114 &8955688005025360585
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Interactable_Objects/Pushable
+  m_EditorClassIdentifier: 
+  Path: event:/Interactable_Objects/Pushable
+  guid: 3c9aa3c677b94b47ba23f72e8bdf6430
+  Banks:
+  - {fileID: 5263575620584861997}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 15
+  MaxDistance: 35
+  Length: 3320
+--- !u!114 &9134893305246129358
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/_Tests/Test_Ambience
+  m_EditorClassIdentifier: 
+  Path: event:/_Tests/Test_Ambience
+  guid: 97ed51e82d906641ad180a11fff9a934
+  Banks:
+  - {fileID: -5780402325416629540}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters:
+  - {fileID: -381573863688855216}
+  MinDistance: 50
+  MaxDistance: 100
+  Length: 51525
+--- !u!114 &9169220377628843789
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Locomotion_Player/Death_by_falling_onto_ground
+  m_EditorClassIdentifier: 
+  Path: event:/Locomotion_Player/Death_by_falling_onto_ground
+  guid: e343972c0b417e4383b141ca6768e861
+  Banks:
+  - {fileID: -5986300015589498550}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 600
