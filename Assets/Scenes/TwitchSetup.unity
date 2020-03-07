@@ -369,16 +369,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 4859362743818094219, guid: cb4ae99a2ed2c4c2e9cb8119c762fd7f,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6317945443383906170, guid: cb4ae99a2ed2c4c2e9cb8119c762fd7f,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 7153762666511078214, guid: cb4ae99a2ed2c4c2e9cb8119c762fd7f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -484,25 +474,10 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7153762666511078217, guid: cb4ae99a2ed2c4c2e9cb8119c762fd7f,
-        type: 3}
-      propertyPath: m_BlockingMask.m_Bits
-      value: 55
-      objectReference: {fileID: 0}
     - target: {fileID: 7153762666511078218, guid: cb4ae99a2ed2c4c2e9cb8119c762fd7f,
         type: 3}
       propertyPath: m_Name
       value: TwitchSetupMenu
-      objectReference: {fileID: 0}
-    - target: {fileID: 8006848513308725965, guid: cb4ae99a2ed2c4c2e9cb8119c762fd7f,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8925077898371013436, guid: cb4ae99a2ed2c4c2e9cb8119c762fd7f,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cb4ae99a2ed2c4c2e9cb8119c762fd7f, type: 3}
