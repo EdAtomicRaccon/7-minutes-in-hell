@@ -13,6 +13,7 @@ using TwitchLib.Unity;
 using TwitchLib.PubSub;
 #endif // !UNITY_IOS && !UNITY_ANDROID && !UNITY_SWITCH && !UNITY_TVOS && !UNITY_WEBGL
 
+[DefaultExecutionOrder(-1000)]
 // TODO: create async connection workflow (async method or coroutine?)
 public class TwitchExtensionGameClient : Singleton<TwitchExtensionGameClient>
 {
@@ -48,7 +49,7 @@ public class TwitchExtensionGameClient : Singleton<TwitchExtensionGameClient>
     public bool IsConnecting { get { return isConnecting; } }
     public bool IsConnected { get { return connected; } }
 
-#region Unity Messages
+    #region Unity Messages
 
     private void OnEnable()
     {
@@ -74,7 +75,6 @@ public class TwitchExtensionGameClient : Singleton<TwitchExtensionGameClient>
         client.OnUserJoined += Client_OnUserJoined;
         client.OnWhisperCommandReceived += Client_OnWhisperCommandReceived;
 
-
         twitchPubSub = new TwitchPubSub();
 
         twitchPubSub.OnPubSubServiceConnected += TwitchPubSub_OnPubSubServiceConnected;
@@ -82,27 +82,6 @@ public class TwitchExtensionGameClient : Singleton<TwitchExtensionGameClient>
         twitchPubSub.OnBitsReceived += TwitchPubSub_OnBitsReceived;
         twitchPubSub.OnFollow += TwitchPubSub_OnFollow;
         twitchPubSub.OnChannelSubscription += TwitchPubSub_OnChannelSubscription;
-
-        //// authenticate and connect
-
-        //// get access token
-        //if (string.IsNullOrEmpty(accessToken))
-        //{
-        //    accessToken = PlayerPrefs.GetString("TwitchOauthToken", string.Empty);
-        //    if (string.IsNullOrEmpty(accessToken))
-        //    {
-        //        // initiate token generation
-        //        Application.OpenURL(GetRequestString());
-        //    }
-        //} else
-        //{
-        //    // try to connect
-        //    InitializeClient();
-
-        //    ConnectClient();
-
-        //    twitchPubSub.Connect();
-        //}
     }
 
 
@@ -264,12 +243,12 @@ public class TwitchExtensionGameClient : Singleton<TwitchExtensionGameClient>
     {
         if (e.Successful)
         {
-            Debug.Log($"OnListenResponse: {e.Response.Nonce}");
+            Debug.Log($"OnListenResponse (success): {e.Response.Nonce}");
             pubSubListening = true;
         }
         else
         {
-            Debug.Log($"OnListenResponse: {e.Response.Error}");
+            Debug.Log($"OnListenResponse (error): {e.Response.Error}");
         }
     }
 
@@ -326,6 +305,7 @@ public class TwitchExtensionGameClient : Singleton<TwitchExtensionGameClient>
 #if ODIN_INSPECTOR
     [Button]
 #endif
+    [ContextMenu("Send test message")]
     private void SendDebugMessage()
     {
         client.SendMessage(channelname, "Hello world!");
@@ -366,8 +346,16 @@ public class TwitchExtensionGameClient : Singleton<TwitchExtensionGameClient>
     private void PubSubStartListening()
     {
         twitchPubSub.ListenToFollows(channelId);
-        twitchPubSub.ListenToBitsEvents(channelId);
-        twitchPubSub.ListenToSubscriptions(channelId);
+
+        if (scope.bitsRead)
+        {
+            twitchPubSub.ListenToBitsEvents(channelId);
+        }
+
+        if (scope.channel_subscriptions || scope.channelReadSubscriptions)
+        {
+            twitchPubSub.ListenToSubscriptions(channelId);
+        }
 
         twitchPubSub.SendTopics(accessToken);
     }
@@ -504,6 +492,12 @@ public class TwitchExtensionGameClient : Singleton<TwitchExtensionGameClient>
     }
 
     #endregion
+
+    //private void OnGUI()
+    //{
+    //    if (Client == null) return;
+    //    GUILayout.Label($"Connection status: {Client.IsConnected}");
+    //}
 
 #endif // !UNITY_IOS && !UNITY_ANDROID && !UNITY_SWITCH && !UNITY_TVOS && !UNITY_WEBGL
 }

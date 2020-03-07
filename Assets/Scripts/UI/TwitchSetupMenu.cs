@@ -1,8 +1,21 @@
 ﻿using UnityEngine;
+using UnityEngine.Events;
 using System.Collections;
 
 public class TwitchSetupMenu : MonoBehaviour
 {
+    public UnityEvent OnConnectionSuccessEvent;
+
+    private void OnEnable()
+    {
+        TwitchExtensionGameClient.Instance.Client.OnConnected += Client_OnConnected;   
+    }
+
+    private void OnDisable()
+    {
+        TwitchExtensionGameClient.Instance.Client.OnConnected -= Client_OnConnected;
+    }
+
     #region Menu Functions
 
     public void OnUsernameEntered(string user)
@@ -39,5 +52,14 @@ public class TwitchSetupMenu : MonoBehaviour
         Debug.Log("Successfully linked Twitch account");
 #endif
     }
+    #endregion
+
+    #region MyRegion
+
+    private void Client_OnConnected(object sender, TwitchLib.Client.Events.OnConnectedArgs e)
+    {
+        OnConnectionSuccessEvent?.Invoke();
+    }
+
     #endregion
 }

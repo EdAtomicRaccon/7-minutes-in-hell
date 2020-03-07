@@ -221,7 +221,12 @@ PrefabInstance:
     - target: {fileID: 1567646526087184292, guid: 3e866c4e9f0a7467098d015712d133bb,
         type: 3}
       propertyPath: m_FontData.m_Alignment
-      value: 7
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1567646526087184292, guid: 3e866c4e9f0a7467098d015712d133bb,
+        type: 3}
+      propertyPath: m_FontData.m_MaxSize
+      value: 300
       objectReference: {fileID: 0}
     - target: {fileID: 8759466046288657922, guid: 3e866c4e9f0a7467098d015712d133bb,
         type: 3}
@@ -247,6 +252,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Button
+      objectReference: {fileID: 0}
+    - target: {fileID: 2630072465656208642, guid: 57cbac24bea8f486db78f36b88b75574,
+        type: 3}
+      propertyPath: m_FontData.m_MaxSize
+      value: 300
       objectReference: {fileID: 0}
     - target: {fileID: 5846756693825560770, guid: 57cbac24bea8f486db78f36b88b75574,
         type: 3}
@@ -372,6 +382,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: InputField
+      objectReference: {fileID: 0}
+    - target: {fileID: 3967470158584106045, guid: dc87331067bae458292b03caee277d7e,
+        type: 3}
+      propertyPath: m_FontData.m_BestFit
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3967470158584106045, guid: dc87331067bae458292b03caee277d7e,
+        type: 3}
+      propertyPath: m_FontData.m_MaxSize
+      value: 300
+      objectReference: {fileID: 0}
+    - target: {fileID: 5678087917411772007, guid: dc87331067bae458292b03caee277d7e,
+        type: 3}
+      propertyPath: m_FontData.m_BestFit
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5678087917411772007, guid: dc87331067bae458292b03caee277d7e,
+        type: 3}
+      propertyPath: m_FontData.m_MaxSize
+      value: 300
       objectReference: {fileID: 0}
     - target: {fileID: 6054616849272546025, guid: dc87331067bae458292b03caee277d7e,
         type: 3}
