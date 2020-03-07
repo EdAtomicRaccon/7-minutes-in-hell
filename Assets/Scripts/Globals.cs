@@ -8,4 +8,6 @@ public class Globals : Singleton<Globals>
     public bool canMove = false;
 
     public GameObject titleCanvas;
+    public GameObject computerCanvas;
+    public GameObject mailPopup;
 }

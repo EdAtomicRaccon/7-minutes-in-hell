@@ -239,9 +239,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 695532375}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ca4a2c1ed2a1f4d8b87acfd7fe5dc6e0, type: 3}
+  m_Script: {fileID: 11500000, guid: 8efbb9a54fec948e0946fbd0183e37ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OnVoteReceived:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!4 &695532377
 Transform:
   m_ObjectHideFlags: 0

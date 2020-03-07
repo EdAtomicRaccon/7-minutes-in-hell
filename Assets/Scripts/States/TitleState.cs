@@ -14,6 +14,7 @@ public class TitleState : MonoBehaviour, IState
     }
 
     void on_click_play_button() {
+        Globals.Instance.canMove = true;
         Destroy(titleScreenCanvas);
         FindObjectOfType<GameManager>()._machine.Fire(Trigger.GAME_START);
     }
