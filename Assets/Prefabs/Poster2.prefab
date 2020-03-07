@@ -1,0 +1,251 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &201799591045417938
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 183628156707344713, guid: 734dad8fd49e9a843b9b42fdd34fe94f,
+        type: 3}
+      propertyPath: m_Name
+      value: Poster2
+      objectReference: {fileID: 0}
+    - target: {fileID: 183628156707344718, guid: 734dad8fd49e9a843b9b42fdd34fe94f,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: b0c22828e1250994ab09ef81cb2b58a1,
+        type: 3}
+    - target: {fileID: 183628156707344719, guid: 734dad8fd49e9a843b9b42fdd34fe94f,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 47.68
+      objectReference: {fileID: 0}
+    - target: {fileID: 183628156707344719, guid: 734dad8fd49e9a843b9b42fdd34fe94f,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 9.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 183628156707344719, guid: 734dad8fd49e9a843b9b42fdd34fe94f,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 62.81
+      objectReference: {fileID: 0}
+    - target: {fileID: 183628156707344719, guid: 734dad8fd49e9a843b9b42fdd34fe94f,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 183628156707344719, guid: 734dad8fd49e9a843b9b42fdd34fe94f,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 183628156707344719, guid: 734dad8fd49e9a843b9b42fdd34fe94f,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 183628156707344719, guid: 734dad8fd49e9a843b9b42fdd34fe94f,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 183628156707344719, guid: 734dad8fd49e9a843b9b42fdd34fe94f,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 183628156707344719, guid: 734dad8fd49e9a843b9b42fdd34fe94f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 183628156707344719, guid: 734dad8fd49e9a843b9b42fdd34fe94f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 183628156707344719, guid: 734dad8fd49e9a843b9b42fdd34fe94f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1634832816353100605, guid: 734dad8fd49e9a843b9b42fdd34fe94f,
+        type: 3}
+      propertyPath: m_text
+      value: YOU are unique until you are not
+      objectReference: {fileID: 0}
+    - target: {fileID: 1634832816353100605, guid: 734dad8fd49e9a843b9b42fdd34fe94f,
+        type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 1634832816353100605, guid: 734dad8fd49e9a843b9b42fdd34fe94f,
+        type: 3}
+      propertyPath: m_fontColor.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1634832816353100605, guid: 734dad8fd49e9a843b9b42fdd34fe94f,
+        type: 3}
+      propertyPath: m_fontColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1634832816353100605, guid: 734dad8fd49e9a843b9b42fdd34fe94f,
+        type: 3}
+      propertyPath: m_fontColor.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1634832816353100605, guid: 734dad8fd49e9a843b9b42fdd34fe94f,
+        type: 3}
+      propertyPath: m_fontSize
+      value: 41.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1634832816353100605, guid: 734dad8fd49e9a843b9b42fdd34fe94f,
+        type: 3}
+      propertyPath: m_textInfo.characterCount
+      value: 32
+      objectReference: {fileID: 0}
+    - target: {fileID: 1634832816353100605, guid: 734dad8fd49e9a843b9b42fdd34fe94f,
+        type: 3}
+      propertyPath: m_textInfo.spaceCount
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1634832816353100605, guid: 734dad8fd49e9a843b9b42fdd34fe94f,
+        type: 3}
+      propertyPath: m_textInfo.wordCount
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1634832816353100605, guid: 734dad8fd49e9a843b9b42fdd34fe94f,
+        type: 3}
+      propertyPath: m_textInfo.lineCount
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2289896805387213776, guid: 734dad8fd49e9a843b9b42fdd34fe94f,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3045407325551750628, guid: 734dad8fd49e9a843b9b42fdd34fe94f,
+        type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3242818029734450630, guid: 734dad8fd49e9a843b9b42fdd34fe94f,
+        type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5452361771034021397, guid: 734dad8fd49e9a843b9b42fdd34fe94f,
+        type: 3}
+      propertyPath: m_text
+      value: 'BELIEVE
+
+        that everything will be chaos
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 5452361771034021397, guid: 734dad8fd49e9a843b9b42fdd34fe94f,
+        type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4278190335
+      objectReference: {fileID: 0}
+    - target: {fileID: 5452361771034021397, guid: 734dad8fd49e9a843b9b42fdd34fe94f,
+        type: 3}
+      propertyPath: m_fontColor.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5452361771034021397, guid: 734dad8fd49e9a843b9b42fdd34fe94f,
+        type: 3}
+      propertyPath: m_fontSize
+      value: 35.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 5452361771034021397, guid: 734dad8fd49e9a843b9b42fdd34fe94f,
+        type: 3}
+      propertyPath: m_margin.w
+      value: -10.256677
+      objectReference: {fileID: 0}
+    - target: {fileID: 5452361771034021397, guid: 734dad8fd49e9a843b9b42fdd34fe94f,
+        type: 3}
+      propertyPath: m_textInfo.characterCount
+      value: 38
+      objectReference: {fileID: 0}
+    - target: {fileID: 5452361771034021397, guid: 734dad8fd49e9a843b9b42fdd34fe94f,
+        type: 3}
+      propertyPath: m_textInfo.spaceCount
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5452361771034021397, guid: 734dad8fd49e9a843b9b42fdd34fe94f,
+        type: 3}
+      propertyPath: m_textInfo.wordCount
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5452361771034021397, guid: 734dad8fd49e9a843b9b42fdd34fe94f,
+        type: 3}
+      propertyPath: m_textInfo.lineCount
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5618413888637746529, guid: 734dad8fd49e9a843b9b42fdd34fe94f,
+        type: 3}
+      propertyPath: m_text
+      value: The difference between the plague and wine is that wine rocks
+      objectReference: {fileID: 0}
+    - target: {fileID: 5618413888637746529, guid: 734dad8fd49e9a843b9b42fdd34fe94f,
+        type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 5618413888637746529, guid: 734dad8fd49e9a843b9b42fdd34fe94f,
+        type: 3}
+      propertyPath: m_fontColor.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5618413888637746529, guid: 734dad8fd49e9a843b9b42fdd34fe94f,
+        type: 3}
+      propertyPath: m_fontColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5618413888637746529, guid: 734dad8fd49e9a843b9b42fdd34fe94f,
+        type: 3}
+      propertyPath: m_fontColor.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5618413888637746529, guid: 734dad8fd49e9a843b9b42fdd34fe94f,
+        type: 3}
+      propertyPath: m_fontSize
+      value: 32.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 5618413888637746529, guid: 734dad8fd49e9a843b9b42fdd34fe94f,
+        type: 3}
+      propertyPath: m_margin.w
+      value: -10.290622
+      objectReference: {fileID: 0}
+    - target: {fileID: 5618413888637746529, guid: 734dad8fd49e9a843b9b42fdd34fe94f,
+        type: 3}
+      propertyPath: m_textInfo.characterCount
+      value: 61
+      objectReference: {fileID: 0}
+    - target: {fileID: 5618413888637746529, guid: 734dad8fd49e9a843b9b42fdd34fe94f,
+        type: 3}
+      propertyPath: m_textInfo.spaceCount
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 5618413888637746529, guid: 734dad8fd49e9a843b9b42fdd34fe94f,
+        type: 3}
+      propertyPath: m_textInfo.wordCount
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 5618413888637746529, guid: 734dad8fd49e9a843b9b42fdd34fe94f,
+        type: 3}
+      propertyPath: m_textInfo.lineCount
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8829068308634664796, guid: 734dad8fd49e9a843b9b42fdd34fe94f,
+        type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 734dad8fd49e9a843b9b42fdd34fe94f, type: 3}
