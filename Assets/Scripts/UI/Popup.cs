@@ -15,24 +15,23 @@ public class Popup : MonoBehaviour
     [SerializeField]
     private TextMeshProUGUI Answer2;
 
-    private UnityAction questionAnsweredListener;
+    private UnityAction answeredListener;
 
     void Awake() {
-        questionAnsweredListener = new UnityAction(HidePopup);
+        answeredListener = new UnityAction(HidePopup);
     }
-
-
     void OnEnable() {
-        EventManager.StartListening("Answer",questionAnsweredListener);
+        EventManager.StartListening("Answer", answeredListener);
     }
 
-    void OnDisable() { 
-        EventManager.StopListening("Answer", questionAnsweredListener);   
+    void OnDisable() {
+        EventManager.StopListening("Answer", answeredListener);
     }
+
     // Start is called before the first frame update
     void Start()
     {
-        ShowPopup();
+        transform.DOLocalMove(Vector3.zero, 1f).SetEase(Ease.InOutBounce);
         SetText();
     }
 
@@ -43,13 +42,8 @@ public class Popup : MonoBehaviour
         Answer2.text = Globals.Instance.questionList.questions[Globals.Instance.currentStep].answer2;
     }
 
-    private void ShowPopup() { 
-        transform.DOLocalMove(Vector3.zero, 1f).SetEase(Ease.InOutBounce);
-    }
-
-    private void HidePopup()
-    {
-        transform.DOLocalMove(new Vector3(0,-800f,0f), 1f).SetEase(Ease.InOutBounce).OnComplete(DestroyPopup);
+    private void HidePopup() { 
+        transform.DOLocalMove(new Vector3(0f,-400f, 0f),1f).SetEase(Ease.InOutBounce).OnComplete(DestroyPopup);
     }
 
     private void DestroyPopup() {
