@@ -35,6 +35,7 @@ public class GameManager : MonoBehaviour
     public int step = 0;
 
     void Awake() {
+        Debug.Log("Heho");
         InitStateMachine();
     }
 
