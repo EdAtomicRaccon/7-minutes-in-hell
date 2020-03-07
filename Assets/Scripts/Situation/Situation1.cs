@@ -2,26 +2,23 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-interface ISituation {
-    void Play();
-}
-
-public class Situation0 : MonoBehaviour , ISituation
+public class Situation1 : MonoBehaviour, ISituation
 {
-    void OnEnable() {
+    void OnEnable()
+    {
         Play();
     }
     public void Play()
     {
-        Debug.Log("Playing situation 0...");
+        Debug.Log("Playing situation 1...");
         StartCoroutine(PlaySequence());
     }
 
-    IEnumerator PlaySequence() {
+    IEnumerator PlaySequence()
+    {
         yield return new WaitForSeconds(2f);
         EnviroFunctions.Instance.MailPop();
         yield return null;
         FindObjectOfType<GameManager>()._machine.Fire(Trigger.CONTEXT_SET);
     }
 }
-
