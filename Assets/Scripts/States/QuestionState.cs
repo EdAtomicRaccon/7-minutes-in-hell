@@ -9,7 +9,7 @@ public class QuestionState : MonoBehaviour,IState
     void Start()
     {
         Debug.Log("Loading questions");
-        Debug.Log("Start listening to Twitch chat");
+        Debug.Log("Start recording to Twitch chat");
         Debug.Log("Are you okay?");
         Debug.Log("A- Yes");
         Debug.Log("Z- No");
