@@ -9,6 +9,6 @@ EditorBuildSettings:
     path: Assets/Scenes/TwitchSetup.unity
     guid: 4890a444856d04b8d946fe9f578898c1
   - enabled: 1
-    path: Assets/Scenes/TwitchFeatureTest.unity
-    guid: ea418b65e351e4b3eaf665b640d21d9e
+    path: Assets/Scenes/MainScene.unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
   m_configObjects: {}
