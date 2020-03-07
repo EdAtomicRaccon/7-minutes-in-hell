@@ -13,6 +13,7 @@ public class QuestionState : MonoBehaviour,IState
         Debug.Log("Are you okay?");
         Debug.Log("A- Yes");
         Debug.Log("Z- No");
+
         StartCoroutine(CountDown());
     }
 

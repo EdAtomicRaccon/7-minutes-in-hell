@@ -79,26 +79,4 @@ public class GameManager : MonoBehaviour
         Component c = gameObject.AddComponent(typeof(T));
         currentComponentState = c as IState;
     }
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        //Load the context on screen
-
-        //Wait for the context to be shown
-
-        //Load the two possible answers
-
-        //Start Listening Twitch integration
-
-        //Manage the player input & stop listening Twitch integration -> public method in the
-
-        //Go back to first step
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
