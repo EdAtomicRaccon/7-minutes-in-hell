@@ -13,12 +13,17 @@ MonoBehaviour:
   m_Name: Question list
   m_EditorClassIdentifier: 
   questions:
-  - question: How is the weather
-    answer1: Bad
-    answer2: Good
-  - question: How do you feel
-    answer1: Comfy
-    answer2: Terrible
+  - question: Picture a house on fire. Two people are stuck inside. One is a doctor
+      and the other is an architect. You see the structure of the house crumbling
+      and you know you only have time to save one. Which one will you save?
+    answer1: Save the doctor
+    answer2: Save the architect
+  - question: You know a secret. Your childhood best friend committed a vicious murder.
+      But someone else got convicted for it and is now on his way to the death penalty.
+      You have a choice, will you denounce your best friend knowing they will die
+      for their crime or will you let the innocent man die to save your friend.
+    answer1: Save your friend
+    answer2: 'Save the innocent man '
   - question: 
     answer1: 
     answer2: 
