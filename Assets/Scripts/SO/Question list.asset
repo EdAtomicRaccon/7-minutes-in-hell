@@ -14,11 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   questions:
   - question: How is the weather
-    answer1: Bad (A)
-    answer2: Good (Z)
+    answer1: Bad
+    answer2: Good
   - question: How do you feel
-    answer1: Comfy (A)
-    answer2: Terrible (Z)
+    answer1: Comfy
+    answer2: Terrible
   - question: 
     answer1: 
     answer2: 

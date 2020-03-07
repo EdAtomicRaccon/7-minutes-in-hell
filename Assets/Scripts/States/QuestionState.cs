@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Events;
+
 public class QuestionState : MonoBehaviour,IState
 {
     private int countdown = 10;
@@ -21,15 +21,13 @@ public class QuestionState : MonoBehaviour,IState
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.A)) {
-            EventManager.TriggerEvent("Answer");
+        if (Input.GetKeyDown(KeyCode.A)) { 
             Debug.Log("You answered yes");
-            PlayerAnswered();
+            FindObjectOfType<GameManager>()._machine.Fire(Trigger.PLAYER_ANSWER);
         }
-        if (Input.GetKeyDown(KeyCode.Z)) {
-            EventManager.TriggerEvent("Answer");
+        if (Input.GetKeyDown(KeyCode.Z)) { 
             Debug.Log("You answered no");
-            PlayerAnswered();
+            FindObjectOfType<GameManager>()._machine.Fire(Trigger.PLAYER_ANSWER);
         }
 
     }
@@ -41,11 +39,6 @@ public class QuestionState : MonoBehaviour,IState
             Debug.Log("Time left" + (countdown - i).ToString());
         }
         Debug.Log("Time over");
-        PlayerAnswered();
-    }
-
-    private void PlayerAnswered() {
-        Globals.Instance.currentStep += 1;
         FindObjectOfType<GameManager>()._machine.Fire(Trigger.PLAYER_ANSWER);
     }
 }
