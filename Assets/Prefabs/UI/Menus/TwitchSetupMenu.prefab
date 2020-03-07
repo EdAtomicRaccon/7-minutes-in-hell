@@ -181,6 +181,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 5132029651680355398}
+        m_MethodName: set_text
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: continue
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!1 &7294818505037599218
 GameObject:
   m_ObjectHideFlags: 0
@@ -371,7 +382,7 @@ PrefabInstance:
     - target: {fileID: 3323748629193578622, guid: cfba3488967af4556beb627c98e267b2,
         type: 3}
       propertyPath: m_Text
-      value: twitch account
+      value: Enter username...
       objectReference: {fileID: 0}
     - target: {fileID: 3813032478315011312, guid: cfba3488967af4556beb627c98e267b2,
         type: 3}
@@ -486,7 +497,7 @@ PrefabInstance:
     - target: {fileID: 8720501287160429703, guid: cfba3488967af4556beb627c98e267b2,
         type: 3}
       propertyPath: m_Text
-      value: open auth page
+      value: send request
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cfba3488967af4556beb627c98e267b2, type: 3}
@@ -540,7 +551,7 @@ PrefabInstance:
     - target: {fileID: 2630072465656208642, guid: 57cbac24bea8f486db78f36b88b75574,
         type: 3}
       propertyPath: m_Text
-      value: start game
+      value: waiting for link
       objectReference: {fileID: 0}
     - target: {fileID: 5846756693825560770, guid: 57cbac24bea8f486db78f36b88b75574,
         type: 3}
@@ -678,6 +689,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &5132029651680355398 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2630072465656208642, guid: 57cbac24bea8f486db78f36b88b75574,
+    type: 3}
+  m_PrefabInstance: {fileID: 7153762665789438276}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &7153762666057323402
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -685,6 +708,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7153762666511078214}
     m_Modifications:
+    - target: {fileID: 216728921889354658, guid: cfba3488967af4556beb627c98e267b2,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 216728921889354658, guid: cfba3488967af4556beb627c98e267b2,
         type: 3}
       propertyPath: m_Colors.m_NormalColor.r
@@ -699,6 +727,36 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Colors.m_NormalColor.b
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 216728921889354658, guid: cfba3488967af4556beb627c98e267b2,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 216728921889354658, guid: cfba3488967af4556beb627c98e267b2,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 216728921889354658, guid: cfba3488967af4556beb627c98e267b2,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 5132029651680355398}
+    - target: {fileID: 216728921889354658, guid: cfba3488967af4556beb627c98e267b2,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: set_text
+      objectReference: {fileID: 0}
+    - target: {fileID: 216728921889354658, guid: cfba3488967af4556beb627c98e267b2,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 216728921889354658, guid: cfba3488967af4556beb627c98e267b2,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: connecting...
       objectReference: {fileID: 0}
     - target: {fileID: 347097155412678508, guid: cfba3488967af4556beb627c98e267b2,
         type: 3}
@@ -788,7 +846,7 @@ PrefabInstance:
     - target: {fileID: 3323748629193578622, guid: cfba3488967af4556beb627c98e267b2,
         type: 3}
       propertyPath: m_Text
-      value: paste oauth token
+      value: Paste oauth token...
       objectReference: {fileID: 0}
     - target: {fileID: 3813032478315011312, guid: cfba3488967af4556beb627c98e267b2,
         type: 3}
@@ -903,7 +961,7 @@ PrefabInstance:
     - target: {fileID: 8720501287160429703, guid: cfba3488967af4556beb627c98e267b2,
         type: 3}
       propertyPath: m_Text
-      value: link account
+      value: connect
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cfba3488967af4556beb627c98e267b2, type: 3}
