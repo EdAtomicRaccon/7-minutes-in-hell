@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ResolutionState : MonoBehaviour
+public class ResolutionState : MonoBehaviour,IState
 {
     // Start is called before the first frame update
     void Start()
