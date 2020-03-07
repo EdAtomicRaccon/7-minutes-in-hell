@@ -10,6 +10,7 @@ public class QuestionState : MonoBehaviour,IState
     {
         Debug.Log("Loading questions");
         Debug.Log("Start recording to Twitch chat");
+        TwitchGameLogic.Instance.StartVoting();
         Debug.Log("Are you okay?");
         Debug.Log("A- Yes");
         Debug.Log("Z- No");
