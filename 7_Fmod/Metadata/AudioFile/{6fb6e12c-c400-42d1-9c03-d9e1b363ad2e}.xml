@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="AudioFile" id="{6fb6e12c-c400-42d1-9c03-d9e1b363ad2e}">
+        <property name="assetPath">
+            <value>Ambiance/Amb_Honk_Passby_Weird_04.wav</value>
+        </property>
+        <property name="isStreaming">
+            <value>true</value>
+        </property>
+        <property name="frequencyInKHz">
+            <value>44.0999985</value>
+        </property>
+        <property name="channelCount">
+            <value>2</value>
+        </property>
+        <property name="length">
+            <value>13.56045351473923</value>
+        </property>
+        <relationship name="masterAssetFolder">
+            <destination>{7cb8e790-b83b-446a-99cd-a033e8a8f02e}</destination>
+        </relationship>
+    </object>
+</objects>

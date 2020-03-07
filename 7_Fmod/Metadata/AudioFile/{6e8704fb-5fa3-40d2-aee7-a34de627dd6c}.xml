@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="AudioFile" id="{6e8704fb-5fa3-40d2-aee7-a34de627dd6c}">
+        <property name="assetPath">
+            <value>Ambiance/Amb_Low_Loop.wav</value>
+        </property>
+        <property name="isStreaming">
+            <value>true</value>
+        </property>
+        <property name="frequencyInKHz">
+            <value>44.0999985</value>
+        </property>
+        <property name="channelCount">
+            <value>1</value>
+        </property>
+        <property name="length">
+            <value>55.160997732426303</value>
+        </property>
+        <relationship name="masterAssetFolder">
+            <destination>{7cb8e790-b83b-446a-99cd-a033e8a8f02e}</destination>
+        </relationship>
+    </object>
+</objects>

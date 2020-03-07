@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="AudioFile" id="{ec550f1c-aca9-4567-b31a-dc5a0e414303}">
+        <property name="assetPath">
+            <value>Ambiance/Amb_ROmmTOne_01.wav</value>
+        </property>
+        <property name="isStreaming">
+            <value>true</value>
+        </property>
+        <property name="frequencyInKHz">
+            <value>44.0999985</value>
+        </property>
+        <property name="channelCount">
+            <value>1</value>
+        </property>
+        <property name="length">
+            <value>44.200000000000003</value>
+        </property>
+        <relationship name="masterAssetFolder">
+            <destination>{7cb8e790-b83b-446a-99cd-a033e8a8f02e}</destination>
+        </relationship>
+    </object>
+</objects>
