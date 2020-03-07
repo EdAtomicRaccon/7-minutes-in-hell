@@ -15,8 +15,8 @@ MonoBehaviour:
   SwitchSettingsMigration: 1
   HasSourceProject: 1
   HasPlatforms: 1
-  sourceProjectPath: ../shadow-of-steam-2018/FM.fspro
-  sourceBankPath: ..\shadow-of-steam-2018\Build
+  sourceProjectPath: Assets/FMODBanks/FMOD/FMOD.fspro
+  sourceBankPath: Assets\FMODBanks\FMOD\Build
   SourceBankPathUnformatted: 
   AutomaticEventLoading: 1
   BankLoadType: 0

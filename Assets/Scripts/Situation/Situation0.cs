@@ -20,6 +20,7 @@ public class Situation0 : MonoBehaviour , ISituation
     IEnumerator PlaySequence() {
         EnviroFunctions.Instance.MailPop();
         yield return null;
+        FindObjectOfType<GameManager>()._machine.Fire(Trigger.CONTEXT_SET);
     }
 }
 

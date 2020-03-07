@@ -10,6 +10,7 @@ public class QuestionState : MonoBehaviour,IState
     {
         Debug.Log("Loading questions");
         Debug.Log("Start recording to Twitch chat");
+        TwitchGameLogic.Instance.StartVoting();
         Debug.Log("Are you okay?");
         Debug.Log("A- Yes");
         Debug.Log("Z- No");
@@ -22,11 +23,11 @@ public class QuestionState : MonoBehaviour,IState
     {
         if (Input.GetKeyDown(KeyCode.A)) { 
             Debug.Log("You answered yes");
-            FindObjectOfType<GameManager>()._machine.Fire(Trigger.PLAYER_ANSWER);
+            PlayerAnswered();
         }
         if (Input.GetKeyDown(KeyCode.Z)) { 
             Debug.Log("You answered no");
-            FindObjectOfType<GameManager>()._machine.Fire(Trigger.PLAYER_ANSWER);
+            PlayerAnswered();
         }
 
     }
@@ -38,6 +39,12 @@ public class QuestionState : MonoBehaviour,IState
             Debug.Log("Time left" + (countdown - i).ToString());
         }
         Debug.Log("Time over");
+        PlayerAnswered();
+    }
+
+    private void PlayerAnswered() { 
         FindObjectOfType<GameManager>()._machine.Fire(Trigger.PLAYER_ANSWER);
+        EventManager.TriggerEvent("Answer");
+        Globals.Instance.currentStep += 1;
     }
 }
