@@ -51,12 +51,6 @@ public class TwitchExtensionGameClient : Singleton<TwitchExtensionGameClient>
 
     #region Unity Messages
 
-    void Awake()
-	{
-		username = PlayerPrefs.GetString("TwitchUsername", string.Empty);
-		accessToken = PlayerPrefs.GetString("TwitchOauthToken", string.Empty);
-	}
-
     private void OnEnable()
     {
         runInBackground = Application.runInBackground;
@@ -126,6 +120,26 @@ public class TwitchExtensionGameClient : Singleton<TwitchExtensionGameClient>
         channelIdReceived = false;
         connected = false;
     }
+
+    //private void OnGUI()
+    //{
+    //    if (client == null) return;
+
+    //    GUILayout.Label($"{client.TwitchUsername} : {client.IsConnected} \n" +
+    //        $"{client.JoinedChannels.Count}");
+    //    foreach (var channel in client.JoinedChannels)
+    //    {
+    //        GUILayout.Label($"{channel.Channel}");
+    //    }
+    //}
+
+    //void Update()
+    //{
+    //    if (Input.GetKeyDown(KeyCode.Space))
+    //    {
+    //        SendDebugMessage();
+    //    }
+    //}
 
 #endregion
 
@@ -390,8 +404,8 @@ public class TwitchExtensionGameClient : Singleton<TwitchExtensionGameClient>
                 Debug.LogError("No username specified. Aborting connection atempt");
                 yield break;
             }
+            channelname = username;
         }
-        channelname = username;
 
         if (string.IsNullOrEmpty(accessToken))
         {
@@ -417,9 +431,8 @@ public class TwitchExtensionGameClient : Singleton<TwitchExtensionGameClient>
         PubSubStartListening();
         while (!pubSubListening) yield return null;
 
-        // store data in player prefs
+        // store access token in player prefs
         PlayerPrefs.SetString("TwitchOauthToken", accessToken);
-		PlayerPrefs.SetString("TwitchUsername", username);
 
 
         isConnecting = false;

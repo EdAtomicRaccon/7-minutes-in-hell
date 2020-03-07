@@ -10,6 +10,4 @@ public class Globals : Singleton<Globals>
     public GameObject titleCanvas;
     public GameObject computerCanvas;
     public GameObject mailPopup;
-
-    public QuestionList questionList;
 }
