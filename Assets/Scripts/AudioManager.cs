@@ -7,18 +7,25 @@ using UnityEngine.Events;
 public class AudioManager : MonoBehaviour
 {
     private UnityAction endVotingListener;
+    private UnityAction playListener;
 
     private FMODUnity.StudioEventEmitter[] studioEventEmitters;
+    public FMODUnity.StudioEventEmitter[] playStudioEventEmitter;
 
     void Awake() {
         endVotingListener = new UnityAction(UpdateSound);
-
+        playListener = new UnityAction(PlaySound);
         studioEventEmitters = GetComponentsInChildren<FMODUnity.StudioEventEmitter>();
+    }
+
+    private void PlaySound()
+    {
+        //playStudioEventEmitter.
     }
 
     private void UpdateSound()
     {
-        float opinion = Globals.Instance.GetCurrentOpinion();
+        float opinion = Globals.Instance.GetTotalOpinion();
 
         foreach (var emitter in studioEventEmitters)
         {
@@ -33,12 +40,14 @@ public class AudioManager : MonoBehaviour
     void OnEnable()
     {
         EventManager.StartListening("EndVoting",endVotingListener);
+        EventManager.StartListening("PlayButton", playListener);
         
     }
 
     void OnDisable()
     {
         EventManager.StopListening("EndVoting", endVotingListener);
+        EventManager.StopListening("PlayButton", playListener);
     }
 
 #if ODIN_INSPECTOR

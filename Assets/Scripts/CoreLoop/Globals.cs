@@ -17,6 +17,8 @@ public class Globals : Singleton<Globals>
     public List<CommunityChoiceData> choices;
     public List<int> yourChoices;
 
+    public int choiceTmp;
+
     void Awake() {
         Init();
     }
@@ -29,7 +31,7 @@ public class Globals : Singleton<Globals>
     /// Calculates the current player-viewer-choice overlap
     /// </summary>
     /// <returns>The normalized opinion data in percent</returns>
-    public float GetCurrentOpinion()
+    public float GetTotalOpinion()
     {
         float opinion = 0;
 
@@ -53,9 +55,19 @@ public class Globals : Singleton<Globals>
 
         for (int i = 0; i < choices.Count; i++)
         {
-            opinion += (yourChoices[i] < 0.5f) ? choices[i].ChoiceA : choices[i].ChoiceB;
+            opinion += GetOpinion(i);
         }
 
         return opinion / choices.Count;
+    }
+
+    public float GetLatestOpinion()
+    {
+        return GetOpinion(yourChoices.Count - 1);
+    }
+
+    public float GetOpinion(int roundIndex)
+    {
+        return (yourChoices[roundIndex] < 0.5f) ? choices[roundIndex].ChoiceA : choices[roundIndex].ChoiceB;
     }
 }

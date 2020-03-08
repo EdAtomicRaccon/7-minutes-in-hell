@@ -22,7 +22,7 @@ public class Popup : MonoBehaviour
 
     private float loadingBarSize;
 
-    public int countdown = 30;
+    public int countdown = 10;
     void Awake() {
         loadingBarSize = loadingBar.sizeDelta.y;
         answeredListener = new UnityAction(HidePopup);
@@ -76,7 +76,7 @@ public class Popup : MonoBehaviour
             Debug.Log("Time left" + (countdown - i).ToString());
         }
         Debug.Log("Time over");
-        Globals.Instance.yourChoices.Add(0);
+        Globals.Instance.yourChoices.Add(Globals.Instance.choiceTmp);
         PlayerAnswered();
     }
 
