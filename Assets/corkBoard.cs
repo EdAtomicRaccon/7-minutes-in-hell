@@ -42,10 +42,5 @@ public class corkBoard : MonoBehaviour
             corkboardObjects[2].SetActive(false);
             corkboardObjects[3].SetActive(true);
         }
-        else if (corkboardObjects[3].activeInHierarchy)
-        {
-            corkboardObjects[3].SetActive(false);
-            corkboardObjects[4].SetActive(true);
-        }
     }
 }
