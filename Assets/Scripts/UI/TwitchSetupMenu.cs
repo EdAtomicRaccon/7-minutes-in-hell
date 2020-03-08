@@ -13,6 +13,7 @@ public class TwitchSetupMenu : MonoBehaviour
 
     private void OnDisable()
     {
+        if (TwitchExtensionGameClient.Instance.Client == null) return;
         TwitchExtensionGameClient.Instance.Client.OnConnected -= Client_OnConnected;
     }
 
