@@ -99,7 +99,7 @@ public class LightFeedback : MonoBehaviour
         float baseIntensity = light.intensity;
         for (float t = 0; t < blendDuration; t += Time.deltaTime)
         {
-            light.intensity = blendCurve.Evaluate(t / blendDuration) * blendAmplitudeMultiplier;
+            light.intensity = 1f + (blendCurve.Evaluate(t / blendDuration) * ( blendAmplitudeMultiplier - 1 ));
             yield return null;
         }
         light.intensity = baseIntensity;

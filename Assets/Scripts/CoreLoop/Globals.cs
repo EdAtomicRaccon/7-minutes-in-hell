@@ -17,6 +17,8 @@ public class Globals : Singleton<Globals>
     public List<CommunityChoiceData> choices;
     public List<int> yourChoices;
 
+    public int choiceTmp;
+
     void Awake() {
         Init();
     }

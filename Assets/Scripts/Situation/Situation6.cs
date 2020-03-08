@@ -17,7 +17,7 @@ public class Situation6 : MonoBehaviour
     IEnumerator PlaySequence()
     {
         EventManager.TriggerEvent("cork");
-        EventManager.TriggerEvent("postIt");
+        // EventManager.TriggerEvent("postIt");
         EventManager.TriggerEvent("poster");
         EventManager.TriggerEvent("transition");
         yield return new WaitForSeconds(3f);

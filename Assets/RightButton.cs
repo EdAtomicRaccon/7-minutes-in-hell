@@ -8,27 +8,36 @@ using DG.Tweening;
 
 public class RightButton : MonoBehaviour
 {
+    private UnityAction leftClickListener;
     private UnityAction rightClickListener;
     private Image background;
     void Awake()
     {
-        rightClickListener = new UnityAction(TriggerAnimation);
+        leftClickListener = new UnityAction(TriggerOff);
+        rightClickListener = new UnityAction(TriggerIn);
         background = GetComponent<Image>();
     }
 
 
     void OnEnable()
     {
-        EventManager.StartListening("RightClick", TriggerAnimation);
+        EventManager.StartListening("LeftClick", TriggerOff);
+        EventManager.StartListening("RightClick", TriggerIn);
     }
 
     void OnDisable()
     {
-        EventManager.StopListening("RightClick", TriggerAnimation);
+        EventManager.StopListening("LeftClick", TriggerOff);
+        EventManager.StopListening("RightClick", TriggerIn);
     }
 
-    private void TriggerAnimation()
+    private void TriggerIn()
     {
         background.color = Color.red;
+    }
+
+    private void TriggerOff()
+    {
+        background.color = Color.white;
     }
 }
