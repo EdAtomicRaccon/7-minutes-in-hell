@@ -5,38 +5,29 @@ using UnityEngine;
 public class QuestionState : MonoBehaviour,IState
 {
     private int countdown = 5;
+    private bool answered = false;
     // Start is called before the first frame update
     void Start()
     {
         Debug.Log("Loading questions");
         Debug.Log("Start recording to Twitch chat");
         TwitchGameLogic.Instance.StartVoting();
-        Debug.Log("Are you okay?");
-        Debug.Log("A- Yes");
-        Debug.Log("Z- No");
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetMouseButtonDown(1)) {
+        if (Input.GetMouseButtonDown(1) && !answered) {
             Globals.Instance.yourChoices.Add(0);
             Debug.Log("You answered yes");
             EventManager.TriggerEvent("LeftClick");
-            PlayerAnswered();
+            answered = true;
         }
-        if (Input.GetMouseButtonDown(0)) { 
+        if (Input.GetMouseButtonDown(0) && !answered) { 
             Globals.Instance.yourChoices.Add(1);
             EventManager.TriggerEvent("RightClick");
-            PlayerAnswered();
+            answered = true;
         }
 
-    }
-
-    private void PlayerAnswered()
-    {
-        FindObjectOfType<GameManager>()._machine.Fire(Trigger.PLAYER_ANSWER);
-        EventManager.TriggerEvent("Answer");
-        Globals.Instance.currentStep += 1;
     }
 }
