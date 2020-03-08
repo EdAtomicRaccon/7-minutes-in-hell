@@ -1,6 +1,11 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:Assets/Plugins/Sirenix/Demos/Custom Drawers.unitypackage.meta
+guid: 7f82f86741fa34610b021bb75ba18cbd
+DefaultImporter:
+=======
 guid: 7b31491f6dd328448bebc7fd0ed08665
 PrefabImporter:
+>>>>>>> 0b5ca7a5589a63728b26fb940eb4bad93085a3fb:Assets/Prefabs/UI/PopupAd.prefab.meta
   externalObjects: {}
   userData: 
   assetBundleName: 

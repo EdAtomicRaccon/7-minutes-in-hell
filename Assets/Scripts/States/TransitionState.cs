@@ -9,6 +9,7 @@ public class TransitionState : MonoBehaviour, IState
         CommunityChoiceData ccd = TwitchGameLogic.Instance.EndVoting();
 
         EventManager.TriggerEvent("EndVoting");
+        EventManager.TriggerEvent("transition");
 
         Globals.Instance.choices.Add(ccd);
 

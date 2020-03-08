@@ -16,6 +16,7 @@ public class Globals : Singleton<Globals>
 
     public List<CommunityChoiceData> choices;
     public List<int> yourChoices;
+
     void Awake() {
         Init();
     }
@@ -24,4 +25,37 @@ public class Globals : Singleton<Globals>
         choices = new List<CommunityChoiceData>();
     }
 
+    /// <summary>
+    /// Calculates the current player-viewer-choice overlap
+    /// </summary>
+    /// <returns>The normalized opinion data in percent</returns>
+    public float GetCurrentOpinion()
+    {
+        float opinion = 0;
+
+        if (choices == null)
+        {
+            Debug.LogError($"No community choice data.");
+            return -1;
+        }
+
+        if (yourChoices == null)
+        {
+            Debug.LogError($"No player choice data.");
+            return -1;
+        }
+
+        if (choices.Count != yourChoices.Count)
+        {
+            Debug.LogError($"Data mismatch. YourChoices: {yourChoices.Count}, CommunityChoices: {choices.Count}");
+            return -1;
+        }
+
+        for (int i = 0; i < choices.Count; i++)
+        {
+            opinion += (yourChoices[i] < 0.5f) ? choices[i].ChoiceA : choices[i].ChoiceB;
+        }
+
+        return opinion / choices.Count;
+    }
 }

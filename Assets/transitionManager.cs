@@ -7,34 +7,26 @@ using UnityEngine.Events;
 public class transitionManager : MonoBehaviour
 {
     private UnityAction propListener;
-    public Light lightTransition;
-    public List<GameObject> disapear;
-    private float maxIntensity = 63;
-    private float intensityAmount = 5;
-    private float minIntensity = 1;
+    public GameObject lightTransition;
 
     void Awake()
     {
-        propListener = new UnityAction(TriggerAnimation);
+        propListener = new UnityAction(TransitionChanges);
     }
 
 
     void OnEnable()
     {
-        lightTransition = lightTransition.GetComponent<Light>();
-        EventManager.StartListening("transition", TriggerAnimation);
+        EventManager.StartListening("transition", TransitionChanges);
     }
 
     void OnDisable()
     {
-        EventManager.StopListening("transiton", TriggerAnimation);
+        EventManager.StopListening("transition", TransitionChanges);
     }
 
-    private void TriggerAnimation()
+    private void TransitionChanges()
     {
-        while (lightTransition.intensity < maxIntensity)
-        {
-            lightTransition.intensity += intensityAmount * Time.deltaTime;
-        }
+        lightTransition.SetActive(true);
     }
 }
