@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class QuestionState : MonoBehaviour,IState
 {
-    private int countdown = 10;
+    private int countdown = 5;
     // Start is called before the first frame update
     void Start()
     {
