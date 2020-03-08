@@ -675,6 +675,23 @@ MonoBehaviour:
   Max: 7
   Default: 0
   Exists: 0
+--- !u!114 &-7632741742921661800
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Light/Intensity
+  m_EditorClassIdentifier: 
+  Name: Intensity
+  Min: 0
+  Max: 7
+  Default: 0
+  Exists: 1
 --- !u!114 &-7571016591005863371
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2188,6 +2205,23 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 1
+--- !u!114 &-4731656058809807128
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Ordi/Intensity
+  m_EditorClassIdentifier: 
+  Name: Intensity
+  Min: 0
+  Max: 7
+  Default: 0
+  Exists: 1
 --- !u!114 &-4649438148622854257
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2628,6 +2662,23 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 3924
+--- !u!114 &-3882389392777438727
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Light/opinion
+  m_EditorClassIdentifier: 
+  Name: opinion
+  Min: 0
+  Max: 100
+  Default: 0
+  Exists: 1
 --- !u!114 &-3869921765793956465
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3446,12 +3497,12 @@ MonoBehaviour:
   Path: event:/Ambiance
   guid: 71aeb6cecf45e14a9ae49be7d7bfcf14
   Banks:
-  - {fileID: -7243636077635610477}
+  - {fileID: 4605576632410358297}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: 2291508331127671646}
+  - {fileID: 4222859685852815279}
   MinDistance: 0
   MaxDistance: 0
   Length: 44200
@@ -3672,13 +3723,13 @@ MonoBehaviour:
   Path: event:/Musique
   guid: 97e94aa4ce21d143b017dfc5632b0845
   Banks:
-  - {fileID: -7243636077635610477}
+  - {fileID: 4605576632410358297}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: 6906640732456544025}
-  - {fileID: 4674191693675422412}
+  - {fileID: -900541581752449750}
+  - {fileID: -382356052815971076}
   MinDistance: 0
   MaxDistance: 0
   Length: 397671
@@ -4240,6 +4291,23 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 0
+--- !u!114 &-900541581752449750
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Musique/Intensity
+  m_EditorClassIdentifier: 
+  Name: Intensity
+  Min: 0
+  Max: 7
+  Default: 0
+  Exists: 1
 --- !u!114 &-888760069567756440
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4464,6 +4532,23 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 0
+--- !u!114 &-382356052815971076
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Musique/opinion
+  m_EditorClassIdentifier: 
+  Name: opinion
+  Min: 0
+  Max: 100
+  Default: 0
+  Exists: 1
 --- !u!114 &-381573863688855216
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4597,10 +4682,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: RedoneFMOD/Build/Desktop/Master.strings.bank
   SubDir: 
-  lastModified: 637192643610000000
+  lastModified: 637192648578803180
   LoadResult: 0
   FileSizes:
-  - Name: 
+  - Name: Desktop
     Value: 1006
   Exists: 1
 --- !u!114 &-103713032046972809
@@ -4675,13 +4760,13 @@ MonoBehaviour:
   Path: event:/Light
   guid: 29d550ed70c92c4f89e5db2e843a4e5e
   Banks:
-  - {fileID: -7243636077635610477}
+  - {fileID: 4605576632410358297}
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: 1789410937220020116}
-  - {fileID: -5908434628477256703}
+  - {fileID: -3882389392777438727}
+  - {fileID: -7632741742921661800}
   MinDistance: 0
   MaxDistance: 0
   Length: 3924
@@ -4734,7 +4819,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EditorBanks:
   - {fileID: -104007006360333028}
-  - {fileID: -7243636077635610477}
+  - {fileID: 4605576632410358297}
   EditorEvents:
   - {fileID: -12158921213296045}
   - {fileID: 6333569436582838962}
@@ -4742,10 +4827,10 @@ MonoBehaviour:
   - {fileID: -1668801129563016935}
   EditorParameters: []
   MasterBanks:
-  - {fileID: -7243636077635610477}
+  - {fileID: 4605576632410358297}
   StringsBanks:
   - {fileID: -104007006360333028}
-  stringsBankWriteTime: 637192643610000000
+  stringsBankWriteTime: 637192648578803180
   cacheVersion: 3
 --- !u!114 &7394729909117608
 MonoBehaviour:
@@ -4912,6 +4997,23 @@ MonoBehaviour:
   Max: 100
   Default: 0
   Exists: 0
+--- !u!114 &260005640481428889
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Ordi/opinion
+  m_EditorClassIdentifier: 
+  Name: opinion
+  Min: 0
+  Max: 100
+  Default: 0
+  Exists: 1
 --- !u!114 &320052065830567950
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4987,6 +5089,23 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 0
+--- !u!114 &414785071018629999
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Ordi/OrdiOnOff
+  m_EditorClassIdentifier: 
+  Name: OrdiOnOff
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
 --- !u!114 &445737905638994517
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7014,6 +7133,23 @@ MonoBehaviour:
   Max: 100
   Default: 0
   Exists: 0
+--- !u!114 &4222859685852815279
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Ambiance/Intensity
+  m_EditorClassIdentifier: 
+  Name: Intensity
+  Min: 0
+  Max: 7
+  Default: 0
+  Exists: 1
 --- !u!114 &4224495423436315257
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7323,6 +7459,24 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 0
+--- !u!114 &4605576632410358297
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: RedoneFMOD/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637192648578766812
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
 --- !u!114 &4634617424306991280
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8073,14 +8227,14 @@ MonoBehaviour:
   Path: event:/Ordi
   guid: 3a405b71ce86734da4adaccc80f6aa0c
   Banks:
-  - {fileID: -7243636077635610477}
+  - {fileID: 4605576632410358297}
   IsStream: 1
   Is3D: 1
   IsOneShot: 0
   Parameters:
-  - {fileID: -5980350994539681774}
-  - {fileID: 3669780971410872168}
-  - {fileID: -3797343892594413605}
+  - {fileID: 414785071018629999}
+  - {fileID: 260005640481428889}
+  - {fileID: -4731656058809807128}
   MinDistance: 1
   MaxDistance: 8.6
   Length: 32792
