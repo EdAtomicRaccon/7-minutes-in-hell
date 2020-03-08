@@ -37,6 +37,16 @@ public class AudioManager : MonoBehaviour
     void OnDisable()
     {
         EventManager.StopListening("EndVoting", endVotingListener);
-        
+    }
+
+#if ODIN_INSPECTOR
+    [Sirenix.OdinInspector.Button]
+#endif
+    public void SetParametersForAll(string paramName, float paramValue)
+    {
+        foreach (var emitter in studioEventEmitters)
+        {
+            emitter.SetParameter(paramName, paramValue);
+        }
     }
 }
