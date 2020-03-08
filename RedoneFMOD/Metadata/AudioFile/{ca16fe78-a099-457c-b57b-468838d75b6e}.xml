@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="AudioFile" id="{ca16fe78-a099-457c-b57b-468838d75b6e}">
+		<property name="assetPath">
+			<value>recbis_03-01.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>1</value>
+		</property>
+		<property name="length">
+			<value>0.6164852607709751</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{ed889194-9547-463c-9bfd-f26345389e8c}</destination>
+		</relationship>
+	</object>
+</objects>
