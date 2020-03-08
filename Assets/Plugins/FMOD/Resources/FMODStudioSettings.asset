@@ -78,8 +78,7 @@ MonoBehaviour:
   Plugins:
   - audiogaming_audiowind
   - resonanceaudio
-  MasterBanks:
-  - Master
+  MasterBanks: []
   Banks: []
   BanksToLoad: []
   LiveUpdatePort: 9264
