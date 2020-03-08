@@ -6,7 +6,9 @@ public class TransitionState : MonoBehaviour, IState
 {
     void Start()
     {
-        TwitchGameLogic.Instance.EndVoting();
+        CommunityChoiceData ccd = TwitchGameLogic.Instance.EndVoting();
+        Globals.Instance.choices.Add(ccd);
+
         if(Globals.Instance.currentStep>6)
             FindObjectOfType<GameManager>()._machine.Fire(Trigger.GAME_END);
         else
