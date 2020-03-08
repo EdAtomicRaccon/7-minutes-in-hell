@@ -8,6 +8,7 @@ public class transitionManager : MonoBehaviour
 {
     private UnityAction propListener;
     public GameObject lightTransition;
+    public GameObject cdCase;
 
     void Awake()
     {
@@ -27,6 +28,14 @@ public class transitionManager : MonoBehaviour
 
     private void TransitionChanges()
     {
-        lightTransition.SetActive(true);
+        //if (lightTransition.activeInHierarchy == false)
+        //    lightTransition.SetActive(true);
+        //else
+        //    lightTransition.SetActive(false);
+        if (cdCase.activeInHierarchy == false)
+            cdCase.SetActive(true);
+        else
+            cdCase.SetActive(false);
+
     }
 }
