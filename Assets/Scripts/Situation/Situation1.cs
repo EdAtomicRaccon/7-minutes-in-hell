@@ -20,6 +20,7 @@ public class Situation1 : MonoBehaviour, ISituation
         EventManager.TriggerEvent("cork");
         EventManager.TriggerEvent("postIt");
         EventManager.TriggerEvent("poster");
+        EventManager.TriggerEvent("transition");
 
         yield return new WaitForSeconds(3f);
         EnviroFunctions.Instance.MailPop();

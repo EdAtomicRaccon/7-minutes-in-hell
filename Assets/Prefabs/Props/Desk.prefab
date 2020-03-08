@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1238961960}
   - component: {fileID: 1238961961}
+  - component: {fileID: 1284595629}
   m_Layer: 0
   m_Name: Brightlight
   m_TagString: Untagged
@@ -92,6 +93,25 @@ Light:
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!95 &1284595629
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1238961959}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: a1f52a615380942b8b117f6986001a8e, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!95 &6602255076629130380
 Animator:
   serializedVersion: 3
@@ -216,6 +236,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4440653316421413198}
   - component: {fileID: 483104544}
+  - component: {fileID: 8067175213218532099}
   m_Layer: 0
   m_Name: Desk
   m_TagString: Untagged
@@ -270,7 +291,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lightTransition: {fileID: 0}
-  disapear: []
+--- !u!114 &8067175213218532099
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4440653316421413193}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1114fbbcb9f0efc4c9be5a9ae0f35dd6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lightTransition: {fileID: 0}
 --- !u!1 &4833269017237915234
 GameObject:
   m_ObjectHideFlags: 0
@@ -366,6 +399,20 @@ CapsuleCollider:
   m_Direction: 1
   m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
 --- !u!114 &1011669477
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5657000242260478321}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd020d425b2464a4da6ceb71bbf26684, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  propName: 
+  animationMethodList: []
+--- !u!114 &5620812849599211136
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5522,15 +5569,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 70235096048c642eb809f433737d477b, type: 3}
---- !u!4 &1726759738716126912 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 70235096048c642eb809f433737d477b,
-    type: 3}
-  m_PrefabInstance: {fileID: 5948157914992039386}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2426867411728207059 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: 70235096048c642eb809f433737d477b,
+    type: 3}
+  m_PrefabInstance: {fileID: 5948157914992039386}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1726759738716126912 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 70235096048c642eb809f433737d477b,
     type: 3}
   m_PrefabInstance: {fileID: 5948157914992039386}
   m_PrefabAsset: {fileID: 0}

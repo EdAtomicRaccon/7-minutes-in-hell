@@ -16,6 +16,9 @@ public class Situation4 : MonoBehaviour
 
     IEnumerator PlaySequence()
     {
+        EventManager.TriggerEvent("postIt");
+        EventManager.TriggerEvent("poster");
+        EventManager.TriggerEvent("transition");
         yield return new WaitForSeconds(3f);
         EnviroFunctions.Instance.MailPop();
         yield return null;
