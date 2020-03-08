@@ -21,11 +21,13 @@ public class QuestionState : MonoBehaviour,IState
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.A)) { 
+        if (Input.GetKeyDown(KeyCode.A)) {
+            Globals.Instance.yourChoices.Add(0);
             Debug.Log("You answered yes");
             PlayerAnswered();
         }
         if (Input.GetKeyDown(KeyCode.Z)) { 
+            Globals.Instance.yourChoices.Add(1);
             Debug.Log("You answered no");
             PlayerAnswered();
         }
@@ -39,6 +41,7 @@ public class QuestionState : MonoBehaviour,IState
             Debug.Log("Time left" + (countdown - i).ToString());
         }
         Debug.Log("Time over");
+        Globals.Instance.yourChoices.Add(0);
         PlayerAnswered();
     }
 
