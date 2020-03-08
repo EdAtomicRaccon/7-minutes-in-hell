@@ -13,54 +13,53 @@ MonoBehaviour:
   m_Name: Question list
   m_EditorClassIdentifier: 
   questions:
-  - question: Picture a house on fire. Two people are stuck inside. One is a doctor
-      and the other is an architect. You see the structure of the house crumbling
-      and you know you only have time to save one. Which one will you save?
-    answer1: Save the doctor
-    answer2: Save the architect
-  - question: 'You know a secret. Your childhood best friend committed a vicious
+  - question: 'In front of you is a red button. If you press it, the bully that made
+      your life hell for years will die suddenly. And no one will ever know that
+      you did it. '
+    answer1: I press the button to get my revenge
+    answer2: "I don\u2019t touch it, I\u2019m no killer "
+  - question: 'You are walking by a construction site. Looking up you see a menacing
+      metal beam about to fall on a group of construction workers.   You have a chance
+      of saving them if you push them out of the way but that puts you right on the
+      spot to be crushed to death by said beam. Is it worth jumping in ? '
+    answer1: 'I stay put and let the gruesome scene unfold '
+    answer2: "I jump in the way to push the group out of harm\u2019s way, aware of
+      the consequences "
+  - question: "You and your loved one got arrested and are being interrogated apart
+      from each other. The police encourage you to denounce your lover dooming them
+      to a heavy penalty but helping you walk free.   You can\u2019t be sure if they
+      will denounce you on their side dooming you in return. If both of you stay
+      silent, the police will have to let you go for lack of evidence. Do you take
+      this chance?  "
+    answer1: "I denounce them to make sure I\u2019m safe"
+    answer2: 'I stay loyal and take the risk of being betrayed '
+  - question: 'You know a dark secret. Your childhood best friend committed a vicious
       murder. But someone else got convicted for it and is now on his way to the
-      death penalty. You have a choice, will you denounce your best friend knowing
+      death penalty.   You have a choice, will you denounce your best friend knowing
       they will die for their crime or will you let the innocent man die to save
-      your friend. '
-    answer1: Save your friend
-    answer2: 'Save the innocent man '
-  - question: It is a sunny afternoon and you are walking by a construction site.
-      Looking up you see a loose and menacing metal beam about to fall on a group
-      of 7 people chatting. You have a chance of saving them if you push them out
-      of the way but that puts you right on the spot to be crushed to death by said
-      beam. Is it worth jumping in ?
-    answer1: Stay put
-    answer2: Push them away
-  - question: You are in a hospital and a doctor comes to you with terrible news.
-      Your mother is sick and has 3 months to live but only you know about her condition.
-      You can choose to hide it from her so that she can enjoy the last moments of
-      her life as if everything is normal, or you can tell her so that she can make
-      arrangements and say goodbye.
-    answer1: Tell her
-    answer2: Hide it from Her
-  - question: 'After a hike gone wrong, your 4 kids end up trapped in a network of
-      caves.  You do not in which of the two entrances in front of you they are trapped.
-      But what you know is that the water is rising fast, menacing to drown them
-      soon. You have enough equipment to cover one of the two entrances to prevent
-      the water from entering and flooding it. Do you cover the entrance knowing
-      there is a 50% chance you are saving them and 50% chance you are dooming them?
-      Or do you not implicate yourself and let the water flow. '
-    answer1: Cover the entrance
-    answer2: Do not get implicated
-  - question: 'You and your brother got caught by the police for a serious crime
-      and are held in custody. You are being interrogated apart from him and the
-      police encourage you to denounce your brother dooming him to a heavy penalty
-      but helping you walk free. You have no idea if he will denounce you on his
-      side dooming you in return. If both of you stay silent, the police will have
-      to let you go for lack of evidence. Do you take this chance ? '
-    answer1: Denounce him
-    answer2: Stay silent
-  - question: 'You are in charge of helping refugees get to shore. After a storm,
-      the only option left is a small boat with a capacity of 7 people maximum. There
-      are 30 refugees to save. You have a choice in front of you. You can make sure
-      7 people gets to shore, leaving the others to die at sea, knowing you will
-      be judged and jailed for letting innocent people die. Or you can take a chance
-      and fill the boat with the 30 refugees not knowing if you will reach the shore. '
-    answer1: Go with 7 people
-    answer2: Fill the boat with everyone
+      your friend.  '
+    answer1: I keep the secret and protect my friend
+    answer2: 'I speak up and make sure the innocent man walks free '
+  - question: 'Your mother is sick and has 3 months to live but only you know about
+      her condition.   You can choose to hide it from her so that she can enjoy the
+      last moments of her life as if everything is normal, or you can tell her so
+      that she can make arrangements and say goodbye. '
+    answer1: I hide the truth
+    answer2: I tell her the truth
+  - question: 'Your daughter and her best friend are swimming in the ocean when you
+      realize they both got caught in a current. You get to them but notice that
+      your daughter is stronger than her friend, struggling to keep afloat.   If
+      you choose your daughter, her friend will definitely not make it.  If you save
+      the friend first, chances are your daughter might not survive long enough for
+      you to save her too.  '
+    answer1: I save my daughter
+    answer2: I bring the other child to safety first
+  - question: 'You are now in charge of helping refugees get to shore  After a storm,
+      the only option left is a small boat with a capacity of 7 people maximum but
+      there are 30 refugees to save.   You can make sure 7 people get to shore, leaving
+      the others to die at sea, knowing you will be judged and jailed for letting
+      innocent people die.  Or you can take a chance and fill the boat with the 30
+      refugees not knowing if you will reach the shore but sure that you will not
+      end up in jail either way.  '
+    answer1: I stay safe and secure 7 people
+    answer2: 'I Fill the boat with everyone '
