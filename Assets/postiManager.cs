@@ -47,5 +47,10 @@ public class postiManager : MonoBehaviour
             postItText[3].SetActive(false);
             postItText[4].SetActive(true);
         }
+        else if (postItText[4].activeInHierarchy)
+        {
+            postItText[4].SetActive(false);
+            postItText[5].SetActive(true);
+        }
     }
 }

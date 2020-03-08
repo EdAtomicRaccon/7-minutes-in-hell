@@ -28,9 +28,14 @@ public class transitionManager : MonoBehaviour
 
     private void TransitionChanges()
     {
-        if (lightTransition.activeInHierarchy == false) lightTransition.SetActive(true);
-        if (lightTransition.activeInHierarchy == true) lightTransition.SetActive(false);
-        if (cdCase.activeInHierarchy == false) lightTransition.SetActive(true);
-        if (cdCase.activeInHierarchy == true) lightTransition.SetActive(false);
+        //if (lightTransition.activeInHierarchy == false)
+        //    lightTransition.SetActive(true);
+        //else
+        //    lightTransition.SetActive(false);
+        if (cdCase.activeInHierarchy == false)
+            cdCase.SetActive(true);
+        else
+            cdCase.SetActive(false);
+
     }
 }

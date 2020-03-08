@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3446629427777114631}
   - component: {fileID: 2454130233993575790}
+  - component: {fileID: 369865242762301267}
   m_Layer: 0
   m_Name: WarmLightYellow
   m_TagString: Untagged
@@ -92,3 +93,54 @@ Light:
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &369865242762301267
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8385639992965310501}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cdcfc7c4df59f4e2984296572db28e69, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  opinionThreshold: 0.5
+  flickerFrequency: 20
+  flickerDuration: 1
+  flickerRange: {x: 0.5, y: 4}
+  blendCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 2
+      outSlope: 2
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.5
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: -2
+      outSlope: -2
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  blendAmplitudeMultiplier: 3
+  blendDuration: 3
