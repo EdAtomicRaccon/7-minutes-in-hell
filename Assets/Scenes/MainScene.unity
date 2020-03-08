@@ -452,6 +452,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mouseSensitivity: 100
   clampAngle: 80
+--- !u!1 &1011669473 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5657000242260478321, guid: 1a1b6db41e932494fb1818dc1dcc4501,
+    type: 3}
+  m_PrefabInstance: {fileID: 4440653315561024802}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1011669477
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1011669473}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd020d425b2464a4da6ceb71bbf26684, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  propName: 
+  animationMethodList: []
 --- !u!1001 &1190955033
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -822,7 +842,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2291119588336969450, guid: 1a1b6db41e932494fb1818dc1dcc4501, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 1a1b6db41e932494fb1818dc1dcc4501, type: 3}
 --- !u!1001 &8083595306901030535
 PrefabInstance:

@@ -54,6 +54,7 @@ public class GameManager : MonoBehaviour
         _machine.Configure(State.TITLE)
             //.PermitReentry(Trigger.GRANULE_SELECTED)
             .OnEntry(t => LoadState<TitleState>())
+            .OnExit(t=> Invoke("TriggerAnimation", 5f))
             .Permit(Trigger.GAME_START, State.CONTEXT);
 
         _machine.Configure(State.CONTEXT)
@@ -85,5 +86,13 @@ public class GameManager : MonoBehaviour
 
         Component c = gameObject.AddComponent(typeof(T));
         currentComponentState = c as IState;
+    }
+
+    private string[] props = {"keyboard","cdDrive","lamp","mug","monitor","curtains","table" };
+    private void TriggerAnimation() {
+        string eventName = props[Random.Range(0, props.Length - 1)];
+        Debug.Log(eventName);
+        EventManager.TriggerEvent(eventName);
+        Invoke("TriggerAnimation", Random.Range(10f,17f));
     }
 }
