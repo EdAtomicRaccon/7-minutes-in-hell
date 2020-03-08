@@ -91,6 +91,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2116093640300147592}
   - component: {fileID: 2116093640300147599}
+  - component: {fileID: 1401403134}
   m_Layer: 0
   m_Name: Postit
   m_TagString: Untagged
@@ -105,7 +106,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2116093640300147598}
-  m_LocalRotation: {x: -0.0050439425, y: 0.0010102509, z: -0.19638677, w: 0.98051304}
+  m_LocalRotation: {x: -0.0050438205, y: 0.0010099974, z: -0.1963878, w: 0.98051286}
   m_LocalPosition: {x: -0.7, y: 1.335, z: 7.334}
   m_LocalScale: {x: 0.052766275, y: 0.052766275, z: 0.052766275}
   m_Children:
@@ -168,6 +169,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1401403134
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2116093640300147598}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad60a9fd803d92e43bfb7f9957ceb7a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  postItText:
+  - {fileID: 5848495843992861520}
+  - {fileID: 7502038176561033578}
+  - {fileID: 8892919359438092125}
+  - {fileID: 266920644548024390}
+  - {fileID: 9114946339407799380}
+  - {fileID: 6121098734772286891}
 --- !u!1 &2871743499682605495
 GameObject:
   m_ObjectHideFlags: 0
@@ -400,7 +420,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &7397417675013243083
 RectTransform:
   m_ObjectHideFlags: 0
