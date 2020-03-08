@@ -14,38 +14,27 @@ public class QuestionState : MonoBehaviour,IState
         Debug.Log("Are you okay?");
         Debug.Log("A- Yes");
         Debug.Log("Z- No");
-
-        StartCoroutine(CountDown());
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.A)) {
+        if (Input.GetMouseButtonDown(1)) {
             Globals.Instance.yourChoices.Add(0);
             Debug.Log("You answered yes");
+            EventManager.TriggerEvent("LeftClick");
             PlayerAnswered();
         }
-        if (Input.GetKeyDown(KeyCode.Z)) { 
+        if (Input.GetMouseButtonDown(0)) { 
             Globals.Instance.yourChoices.Add(1);
-            Debug.Log("You answered no");
+            EventManager.TriggerEvent("RightClick");
             PlayerAnswered();
         }
 
     }
 
-    IEnumerator CountDown() {
-        for (int i = 0; i < countdown; i++)
-        {
-            yield return new WaitForSeconds(1f);
-            Debug.Log("Time left" + (countdown - i).ToString());
-        }
-        Debug.Log("Time over");
-        Globals.Instance.yourChoices.Add(0);
-        PlayerAnswered();
-    }
-
-    private void PlayerAnswered() { 
+    private void PlayerAnswered()
+    {
         FindObjectOfType<GameManager>()._machine.Fire(Trigger.PLAYER_ANSWER);
         EventManager.TriggerEvent("Answer");
         Globals.Instance.currentStep += 1;
