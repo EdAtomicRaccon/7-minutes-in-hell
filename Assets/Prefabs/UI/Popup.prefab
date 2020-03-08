@@ -949,7 +949,7 @@ MonoBehaviour:
   Answer1: {fileID: 2278611486154643948}
   Answer2: {fileID: 7956131353933820760}
   loadingBar: {fileID: 3427586721006661322}
-  countdown: 10
+  countdown: 5
 --- !u!1 &6674890936712355892
 GameObject:
   m_ObjectHideFlags: 0
