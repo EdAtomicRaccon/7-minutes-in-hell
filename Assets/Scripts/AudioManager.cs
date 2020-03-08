@@ -8,10 +8,12 @@ public class AudioManager : MonoBehaviour
 {
     private UnityAction endVotingListener;
 
-    public FMODUnity.StudioEventEmitter[] studioEventEmitters;
+    private FMODUnity.StudioEventEmitter[] studioEventEmitters;
 
     void Awake() {
         endVotingListener = new UnityAction(UpdateSound);
+
+        studioEventEmitters = GetComponentsInChildren<FMODUnity.StudioEventEmitter>();
     }
 
     private void UpdateSound()
