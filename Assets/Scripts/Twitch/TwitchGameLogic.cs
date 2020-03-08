@@ -43,6 +43,7 @@ public class TwitchGameLogic : Singleton<TwitchGameLogic>
     public UnityEvent OnVoteReceived;
 
     public bool canVoteMultipleTimes = false;
+    public bool sendOutMessagesToChat = false;
 
     List<TwitchMessageEntry> allMessagesList;
 
@@ -111,7 +112,7 @@ public class TwitchGameLogic : Singleton<TwitchGameLogic>
 
     public void SendTimerMessage(int secondsLeft)
     {
-        SendMessage($"Voting will end in {secondsLeft} seconds.");
+        SendChatMessage($"Voting will end in {secondsLeft} seconds.");
     }
 
     [Button]
@@ -129,6 +130,11 @@ public class TwitchGameLogic : Singleton<TwitchGameLogic>
 
     void SendChatMessage(string message)
     {
+        if (!sendOutMessagesToChat)
+        {
+            Debug.LogWarning($"Sending chat messages is disabled to avoid server spam restrictions");
+            return;
+        }
         Client.SendMessage(TwitchExtensionGameClient.Instance.channelname, message);
     }
 

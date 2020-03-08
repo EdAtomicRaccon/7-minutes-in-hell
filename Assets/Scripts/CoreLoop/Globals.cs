@@ -9,11 +9,12 @@ public class Globals : Singleton<Globals>
 
     public GameObject titleCanvas;
     public GameObject computerCanvas;
+    public GameObject resolutionCanvas;
     public GameObject mailPopup;
     public QuestionList questionList;
 
     public List<CommunityChoiceData> choices;
-
+    public List<int> yourChoices;
     void Awake() {
         Init();
     }

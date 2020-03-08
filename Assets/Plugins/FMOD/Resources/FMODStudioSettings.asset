@@ -15,14 +15,14 @@ MonoBehaviour:
   SwitchSettingsMigration: 1
   HasSourceProject: 1
   HasPlatforms: 1
-  sourceProjectPath: 7_Fmod/7_Fmod.fspro
-  sourceBankPath: 7_Fmod/Build
+  sourceProjectPath: RedoneFMOD/RedoneFMOD.fspro
+  sourceBankPath: RedoneFMOD\Build
   SourceBankPathUnformatted: 
   AutomaticEventLoading: 1
   BankLoadType: 0
   AutomaticSampleLoading: 0
   EncryptionKey: 
-  ImportType: 1
+  ImportType: 0
   TargetAssetPath: FMODBanks
   LoggingLevel: 2
   SpeakerModeSettings:
@@ -75,8 +75,11 @@ MonoBehaviour:
     Value: 32
   - Platform: 20
     Value: 32
-  Plugins: []
-  MasterBanks: []
+  Plugins:
+  - audiogaming_audiowind
+  - resonanceaudio
+  MasterBanks:
+  - Master
   Banks: []
   BanksToLoad: []
   LiveUpdatePort: 9264
