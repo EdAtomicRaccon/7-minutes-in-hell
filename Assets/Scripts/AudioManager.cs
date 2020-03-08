@@ -18,7 +18,7 @@ public class AudioManager : MonoBehaviour
 
     private void UpdateSound()
     {
-        float opinion = Globals.Instance.GetCurrentOpinion();
+        float opinion = Globals.Instance.GetTotalOpinion();
 
         foreach (var emitter in studioEventEmitters)
         {
