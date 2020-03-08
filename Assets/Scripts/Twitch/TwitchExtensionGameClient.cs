@@ -14,7 +14,6 @@ using TwitchLib.PubSub;
 #endif // !UNITY_IOS && !UNITY_ANDROID && !UNITY_SWITCH && !UNITY_TVOS && !UNITY_WEBGL
 
 [DefaultExecutionOrder(-1000)]
-// TODO: create async connection workflow (async method or coroutine?)
 public class TwitchExtensionGameClient : Singleton<TwitchExtensionGameClient>
 {
 #if !UNITY_IOS && !UNITY_ANDROID && !UNITY_SWITCH && !UNITY_TVOS && !UNITY_WEBGL
@@ -50,6 +49,13 @@ public class TwitchExtensionGameClient : Singleton<TwitchExtensionGameClient>
     public bool IsConnected { get { return connected; } }
 
     #region Unity Messages
+
+    private void Awake()
+    {
+        username = PlayerPrefs.GetString("TwitchUsername", string.Empty);
+        accessToken = PlayerPrefs.GetString("TwitchOauthToken", string.Empty);
+        channelname = PlayerPrefs.GetString("TwitchChannelname", string.Empty);
+    }
 
     private void OnEnable()
     {
@@ -404,7 +410,10 @@ public class TwitchExtensionGameClient : Singleton<TwitchExtensionGameClient>
                 Debug.LogError("No username specified. Aborting connection atempt");
                 yield break;
             }
-            channelname = username;
+            if (string.IsNullOrEmpty(channelname))
+            {
+                channelname = username;
+            }
         }
 
         if (string.IsNullOrEmpty(accessToken))
@@ -433,7 +442,8 @@ public class TwitchExtensionGameClient : Singleton<TwitchExtensionGameClient>
 
         // store access token in player prefs
         PlayerPrefs.SetString("TwitchOauthToken", accessToken);
-
+        PlayerPrefs.SetString("TwitchUsername", username);
+        PlayerPrefs.SetString("TwitchChannelname", channelname);
 
         isConnecting = false;
         connected = true;
@@ -477,7 +487,11 @@ public class TwitchExtensionGameClient : Singleton<TwitchExtensionGameClient>
     public void OnUsernameEntered(string username)
     {
         this.username = username;
-        this.channelname = username;
+    }
+
+    public void OnChannelnameEntered(string channelname)
+    {
+        this.channelname = channelname;        
     }
 
     public void RequestAccessToken()
@@ -492,12 +506,6 @@ public class TwitchExtensionGameClient : Singleton<TwitchExtensionGameClient>
     }
 
     #endregion
-
-    //private void OnGUI()
-    //{
-    //    if (Client == null) return;
-    //    GUILayout.Label($"Connection status: {Client.IsConnected}");
-    //}
 
 #endif // !UNITY_IOS && !UNITY_ANDROID && !UNITY_SWITCH && !UNITY_TVOS && !UNITY_WEBGL
 }
