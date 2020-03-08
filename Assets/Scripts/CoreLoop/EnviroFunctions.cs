@@ -11,4 +11,8 @@ public class EnviroFunctions : Singleton<EnviroFunctions>
     public void MailPop() {
         Instantiate(Globals.Instance.mailPopup,Globals.instance.computerCanvas.transform);
     }
+
+    public void AdPop() { 
+        Instantiate(Globals.Instance.adPopup,Globals.instance.computerCanvas.transform);
+    }
 }

@@ -50,7 +50,7 @@ public class Popup : MonoBehaviour
     }
 
     private void HidePopup() { 
-        transform.DOLocalMove(new Vector3(0f,-400f, 0f),1f).SetEase(Ease.InOutBounce).OnComplete(DestroyPopup);
+        transform.DOLocalMove(new Vector3(0f,-400f, 0f),1f).OnComplete(DestroyPopup);
     }
 
     private void DestroyPopup() {

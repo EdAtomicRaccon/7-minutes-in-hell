@@ -16,6 +16,10 @@ public class Situation1 : MonoBehaviour, ISituation
 
     IEnumerator PlaySequence()
     {
+
+        EventManager.TriggerEvent("cork");
+        EventManager.TriggerEvent("postIt");
+
         yield return new WaitForSeconds(3f);
         EnviroFunctions.Instance.MailPop();
         yield return null;

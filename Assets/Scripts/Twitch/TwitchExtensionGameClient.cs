@@ -127,26 +127,6 @@ public class TwitchExtensionGameClient : Singleton<TwitchExtensionGameClient>
         connected = false;
     }
 
-    //private void OnGUI()
-    //{
-    //    if (client == null) return;
-
-    //    GUILayout.Label($"{client.TwitchUsername} : {client.IsConnected} \n" +
-    //        $"{client.JoinedChannels.Count}");
-    //    foreach (var channel in client.JoinedChannels)
-    //    {
-    //        GUILayout.Label($"{channel.Channel}");
-    //    }
-    //}
-
-    //void Update()
-    //{
-    //    if (Input.GetKeyDown(KeyCode.Space))
-    //    {
-    //        SendDebugMessage();
-    //    }
-    //}
-
 #endregion
 
 
