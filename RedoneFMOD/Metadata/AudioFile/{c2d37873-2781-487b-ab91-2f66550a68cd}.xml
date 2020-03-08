@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="AudioFile" id="{c2d37873-2781-487b-ab91-2f66550a68cd}">
+		<property name="assetPath">
+			<value>Ambiance/Amb_Honk_Passby_Normal_04.wav</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>13.56045351473923</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{ed889194-9547-463c-9bfd-f26345389e8c}</destination>
+		</relationship>
+	</object>
+</objects>
