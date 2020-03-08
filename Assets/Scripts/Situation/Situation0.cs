@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-interface ISituation {
+public interface ISituation {
     void Play();
 }
 
@@ -18,6 +18,7 @@ public class Situation0 : MonoBehaviour , ISituation
     }
 
     IEnumerator PlaySequence() {
+        yield return new WaitForSeconds(3f);
         EnviroFunctions.Instance.MailPop();
         yield return null;
         FindObjectOfType<GameManager>()._machine.Fire(Trigger.CONTEXT_SET);

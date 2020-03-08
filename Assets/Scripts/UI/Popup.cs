@@ -22,17 +22,17 @@ public class Popup : MonoBehaviour
     }
     void OnEnable() {
         EventManager.StartListening("Answer", answeredListener);
+        transform.DOMoveY(0, 1f);
+        SetText();
     }
 
     void OnDisable() {
         EventManager.StopListening("Answer", answeredListener);
     }
 
-    // Start is called before the first frame update
-    void Start()
+    private void DebugStuff()
     {
-        transform.DOLocalMove(Vector3.zero, 1f).SetEase(Ease.InOutBounce);
-        SetText();
+        Debug.Log("Stuff");
     }
 
     private void SetText()

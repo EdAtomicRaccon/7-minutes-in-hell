@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="AudioFile" id="{7a3b5638-8a66-4282-965d-ff55cb59e2cf}">
+        <property name="assetPath">
+            <value>Ordi/Ordi_Fan_01_Random1.wav</value>
+        </property>
+        <property name="frequencyInKHz">
+            <value>44.0999985</value>
+        </property>
+        <property name="channelCount">
+            <value>2</value>
+        </property>
+        <property name="length">
+            <value>3.4368253968253968</value>
+        </property>
+        <relationship name="masterAssetFolder">
+            <destination>{7cb8e790-b83b-446a-99cd-a033e8a8f02e}</destination>
+        </relationship>
+    </object>
+</objects>
