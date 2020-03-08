@@ -11,6 +11,7 @@ public class Globals : Singleton<Globals>
     public GameObject computerCanvas;
     public GameObject resolutionCanvas;
     public GameObject mailPopup;
+    public GameObject adPopup;
     public QuestionList questionList;
 
     public List<CommunityChoiceData> choices;
