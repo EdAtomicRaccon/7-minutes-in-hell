@@ -639,6 +639,12 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: ecdf804c390e2234ea5ef4078c79337d,
         type: 2}
+    - target: {fileID: 2114169994292076169, guid: ce024c40bf8140a498ac41dc18b04b97,
+        type: 3}
+      propertyPath: resolutionCanvas
+      value: 
+      objectReference: {fileID: 6746887320900195466, guid: 6cdacf1ac087ecc47943433933b96100,
+        type: 3}
     - target: {fileID: 7500785859349030228, guid: ce024c40bf8140a498ac41dc18b04b97,
         type: 3}
       propertyPath: m_LocalPosition.x

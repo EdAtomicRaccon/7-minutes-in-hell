@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="AudioFile" id="{81c1c3c9-8cc8-4f31-903d-a86038ba7c5d}">
+		<property name="assetPath">
+			<value>Ambiance/Amb_Loop_Honk4.wav</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>1</value>
+		</property>
+		<property name="length">
+			<value>282.85714285714283</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{ed889194-9547-463c-9bfd-f26345389e8c}</destination>
+		</relationship>
+	</object>
+</objects>

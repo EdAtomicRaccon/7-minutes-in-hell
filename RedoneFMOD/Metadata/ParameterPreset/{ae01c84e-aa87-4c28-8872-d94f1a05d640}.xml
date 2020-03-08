@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="ParameterPreset" id="{ae01c84e-aa87-4c28-8872-d94f1a05d640}">
+		<property name="name">
+			<value>OrdiOnOff</value>
+		</property>
+		<relationship name="folder">
+			<destination>{ede9207c-a8e4-4540-aa25-3bd6f7c3ad99}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{94947333-1333-4fd1-8a48-a93c7a951abc}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{94947333-1333-4fd1-8a48-a93c7a951abc}">
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+	</object>
+</objects>

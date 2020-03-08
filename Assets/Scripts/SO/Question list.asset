@@ -18,24 +18,49 @@ MonoBehaviour:
       and you know you only have time to save one. Which one will you save?
     answer1: Save the doctor
     answer2: Save the architect
-  - question: You know a secret. Your childhood best friend committed a vicious murder.
-      But someone else got convicted for it and is now on his way to the death penalty.
-      You have a choice, will you denounce your best friend knowing they will die
-      for their crime or will you let the innocent man die to save your friend.
+  - question: 'You know a secret. Your childhood best friend committed a vicious
+      murder. But someone else got convicted for it and is now on his way to the
+      death penalty. You have a choice, will you denounce your best friend knowing
+      they will die for their crime or will you let the innocent man die to save
+      your friend. '
     answer1: Save your friend
     answer2: 'Save the innocent man '
-  - question: 
-    answer1: 
-    answer2: 
-  - question: 
-    answer1: 
-    answer2: 
-  - question: 
-    answer1: 
-    answer2: 
-  - question: 
-    answer1: 
-    answer2: 
-  - question: 
-    answer1: 
-    answer2: 
+  - question: It is a sunny afternoon and you are walking by a construction site.
+      Looking up you see a loose and menacing metal beam about to fall on a group
+      of 7 people chatting. You have a chance of saving them if you push them out
+      of the way but that puts you right on the spot to be crushed to death by said
+      beam. Is it worth jumping in ?
+    answer1: Stay put
+    answer2: Push them away
+  - question: You are in a hospital and a doctor comes to you with terrible news.
+      Your mother is sick and has 3 months to live but only you know about her condition.
+      You can choose to hide it from her so that she can enjoy the last moments of
+      her life as if everything is normal, or you can tell her so that she can make
+      arrangements and say goodbye.
+    answer1: Tell her
+    answer2: Hide it from Her
+  - question: 'After a hike gone wrong, your 4 kids end up trapped in a network of
+      caves.  You do not in which of the two entrances in front of you they are trapped.
+      But what you know is that the water is rising fast, menacing to drown them
+      soon. You have enough equipment to cover one of the two entrances to prevent
+      the water from entering and flooding it. Do you cover the entrance knowing
+      there is a 50% chance you are saving them and 50% chance you are dooming them?
+      Or do you not implicate yourself and let the water flow. '
+    answer1: Cover the entrance
+    answer2: Do not get implicated
+  - question: 'You and your brother got caught by the police for a serious crime
+      and are held in custody. You are being interrogated apart from him and the
+      police encourage you to denounce your brother dooming him to a heavy penalty
+      but helping you walk free. You have no idea if he will denounce you on his
+      side dooming you in return. If both of you stay silent, the police will have
+      to let you go for lack of evidence. Do you take this chance ? '
+    answer1: Denounce him
+    answer2: Stay silent
+  - question: 'You are in charge of helping refugees get to shore. After a storm,
+      the only option left is a small boat with a capacity of 7 people maximum. There
+      are 30 refugees to save. You have a choice in front of you. You can make sure
+      7 people gets to shore, leaving the others to die at sea, knowing you will
+      be judged and jailed for letting innocent people die. Or you can take a chance
+      and fill the boat with the 30 refugees not knowing if you will reach the shore. '
+    answer1: Go with 7 people
+    answer2: Fill the boat with everyone

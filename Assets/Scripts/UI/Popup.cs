@@ -22,7 +22,7 @@ public class Popup : MonoBehaviour
     }
     void OnEnable() {
         EventManager.StartListening("Answer", answeredListener);
-        transform.DOMoveY(0, 1f);
+        ShowPopup();
         SetText();
     }
 
@@ -35,11 +35,18 @@ public class Popup : MonoBehaviour
         Debug.Log("Stuff");
     }
 
+    private void ShowPopup() {
+        transform.DOMoveY(0, 1f);
+    }
+
     private void SetText()
     {
         Question.text = Globals.Instance.questionList.questions[Globals.Instance.currentStep].question;
         Answer1.text = Globals.Instance.questionList.questions[Globals.Instance.currentStep].answer1;
         Answer2.text = Globals.Instance.questionList.questions[Globals.Instance.currentStep].answer2;
+        Question.ForceMeshUpdate();
+        Answer1.ForceMeshUpdate();
+        Answer2.ForceMeshUpdate();
     }
 
     private void HidePopup() { 
