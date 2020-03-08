@@ -188,11 +188,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6219c663ff4a19c4d902d9a9f066f4c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  studioEventEmitters:
-  - {fileID: 6219634377572113981}
-  - {fileID: 6219634376263568789}
-  - {fileID: 6219634376609504784}
-  - {fileID: 6219634376609504791}
+  studioEventEmitters: []
 --- !u!1 &6219634377572113971
 GameObject:
   m_ObjectHideFlags: 0
@@ -237,7 +233,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CollisionTag: 
-  Event: event:/Ordi
+  Event: event:/Ordi 2
   PlayEvent: 1
   StopEvent: 2
   AllowFadeout: 1
@@ -252,4 +248,4 @@ MonoBehaviour:
     Value: 0
   OverrideAttenuation: 0
   OverrideMinDistance: 1
-  OverrideMaxDistance: 8.6
+  OverrideMaxDistance: 200

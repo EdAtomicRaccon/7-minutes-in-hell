@@ -5,6 +5,7 @@ using DG.Tweening;
 using System;
 using TMPro;
 using UnityEngine.Events;
+using UnityEngine.UI;
 
 public class Popup : MonoBehaviour
 {
@@ -17,17 +18,25 @@ public class Popup : MonoBehaviour
 
     private UnityAction answeredListener;
 
+    public RectTransform loadingBar;
+
+    private float loadingBarSize;
+
+    public int countdown = 30;
     void Awake() {
+        loadingBarSize = loadingBar.sizeDelta.y;
         answeredListener = new UnityAction(HidePopup);
     }
     void OnEnable() {
         EventManager.StartListening("Answer", answeredListener);
         ShowPopup();
         SetText();
+        StartCoroutine(CountDown());
     }
 
     void OnDisable() {
         EventManager.StopListening("Answer", answeredListener);
+        StopAllCoroutines();
     }
 
     private void DebugStuff()
@@ -49,11 +58,32 @@ public class Popup : MonoBehaviour
         Answer2.ForceMeshUpdate();
     }
 
-    private void HidePopup() { 
-        transform.DOLocalMove(new Vector3(0f,-400f, 0f),1f).OnComplete(DestroyPopup);
+    private void HidePopup() {
+        Sequence seq = DOTween.Sequence();
+        seq.AppendInterval(0.4f).Append(transform.DOLocalMove(new Vector3(0f,-400f, 0f),1f).OnComplete(DestroyPopup));
     }
 
     private void DestroyPopup() {
         Destroy(gameObject);
+    }
+
+    IEnumerator CountDown()
+    {
+        for (int i = 0; i < countdown; i++)
+        {
+            yield return new WaitForSeconds(1f);
+            loadingBar.DOScaleX((1 - (float)i / (float)countdown), 1f).SetEase(Ease.Linear);
+            Debug.Log("Time left" + (countdown - i).ToString());
+        }
+        Debug.Log("Time over");
+        Globals.Instance.yourChoices.Add(0);
+        PlayerAnswered();
+    }
+
+    private void PlayerAnswered()
+    {
+        FindObjectOfType<GameManager>()._machine.Fire(Trigger.PLAYER_ANSWER);
+        EventManager.TriggerEvent("Answer");
+        Globals.Instance.currentStep += 1;
     }
 }

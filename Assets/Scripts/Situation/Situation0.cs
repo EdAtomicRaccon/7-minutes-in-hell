@@ -21,8 +21,6 @@ public class Situation0 : MonoBehaviour , ISituation
         
         yield return new WaitForSeconds(3f);
         EnviroFunctions.Instance.MailPop();
-        yield return new WaitForSeconds(3f);
-        EventManager.TriggerEvent("SomethinHappens");
         yield return null;
         FindObjectOfType<GameManager>()._machine.Fire(Trigger.CONTEXT_SET);
     }
