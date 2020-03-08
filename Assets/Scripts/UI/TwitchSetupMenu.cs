@@ -32,6 +32,19 @@ public class TwitchSetupMenu : MonoBehaviour
 #endif
     }
 
+    public void OnChannelnameEntered(string channel)
+    {
+#if !UNITY_IOS && !UNITY_ANDROID && !UNITY_SWITCH && !UNITY_TVOS && !UNITY_WEBGL
+        TwitchExtensionGameClient.Instance.OnChannelnameEntered(channel);
+#endif
+    }
+
+    public void OnChannelnameCanceled()
+    {
+#if !UNITY_IOS && !UNITY_ANDROID && !UNITY_SWITCH && !UNITY_TVOS && !UNITY_WEBGL
+#endif
+    }
+
     public void OnAccessTokenEntered(string token)
     {
 #if !UNITY_IOS && !UNITY_ANDROID && !UNITY_SWITCH && !UNITY_TVOS && !UNITY_WEBGL

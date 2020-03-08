@@ -42,6 +42,8 @@ public class TwitchGameLogic : Singleton<TwitchGameLogic>
 
     public UnityEvent OnVoteReceived;
 
+    public bool canVoteMultipleTimes = false;
+
     List<TwitchMessageEntry> allMessagesList;
 
 
@@ -142,7 +144,7 @@ public class TwitchGameLogic : Singleton<TwitchGameLogic>
         if (isVoting)
         {
             // can user still vote
-            if (!userIdAlreadyVotedList.Contains(e.ChatMessage.UserId))
+            if (!userIdAlreadyVotedList.Contains(e.ChatMessage.UserId) || canVoteMultipleTimes)
             {
                 // parse message
                 string message = e.ChatMessage.Message.ToLower();
