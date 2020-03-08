@@ -149,7 +149,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Press space to play
+  m_Text: Click to play
 --- !u!1 &1369903541795308464
 GameObject:
   m_ObjectHideFlags: 0

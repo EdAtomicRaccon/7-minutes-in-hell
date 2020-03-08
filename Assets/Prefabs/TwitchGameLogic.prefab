@@ -46,3 +46,5 @@ MonoBehaviour:
   OnVoteReceived:
     m_PersistentCalls:
       m_Calls: []
+  canVoteMultipleTimes: 0
+  sendOutMessagesToChat: 1
